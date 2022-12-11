@@ -7,13 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C88C05C2932EA0F00E17C26 /* ChineseWordOfTheDayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C88C05B2932EA0F00E17C26 /* ChineseWordOfTheDayApp.swift */; };
-		0C88C05E2932EA0F00E17C26 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C88C05D2932EA0F00E17C26 /* ContentView.swift */; };
+		0C0D19F02944124D007CD72D /* WordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0D19EF2944124D007CD72D /* WordView.swift */; };
+		0C0D19F329441627007CD72D /* kaiu.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0C0D19F229441471007CD72D /* kaiu.ttf */; };
+		0C0D19F429441628007CD72D /* kaiu.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0C0D19F229441471007CD72D /* kaiu.ttf */; };
+		0C0D19F729442C13007CD72D /* WordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0D19EF2944124D007CD72D /* WordView.swift */; };
+		0C1D655329342177000E667A /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C88C08E29341D4100E17C26 /* Word.swift */; };
+		0C1D655429342177000E667A /* ChineseDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2C35E229341FDE0069277B /* ChineseDictionary.swift */; };
+		0C1D655729342177000E667A /* ChineseWordOfTheDayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C88C05B2932EA0F00E17C26 /* ChineseWordOfTheDayApp.swift */; };
+		0C1D655829342177000E667A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C88C05D2932EA0F00E17C26 /* HomeView.swift */; };
+		0C29EA67293C48BB00F2C0A7 /* FMDB in Frameworks */ = {isa = PBXBuildFile; productRef = 0C29EA66293C48BB00F2C0A7 /* FMDB */; };
+		0C29EA742942BD6300F2C0A7 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C88C08E29341D4100E17C26 /* Word.swift */; };
+		0C29EA752942BD6300F2C0A7 /* ChineseDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2C35E229341FDE0069277B /* ChineseDictionary.swift */; };
+		0C29EA772942BD9200F2C0A7 /* FMDB in Frameworks */ = {isa = PBXBuildFile; productRef = 0C29EA762942BD9200F2C0A7 /* FMDB */; };
+		0C29EA792942BDDA00F2C0A7 /* DictionarySupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C29EA782942BDDA00F2C0A7 /* DictionarySupport.swift */; };
+		0C29EA7A2942BDDA00F2C0A7 /* DictionarySupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C29EA782942BDDA00F2C0A7 /* DictionarySupport.swift */; };
+		0C29EA7B2942BDDA00F2C0A7 /* DictionarySupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C29EA782942BDDA00F2C0A7 /* DictionarySupport.swift */; };
+		0C29EA7C2942BDDA00F2C0A7 /* DictionarySupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C29EA782942BDDA00F2C0A7 /* DictionarySupport.swift */; };
 		0C88C0602932EA1000E17C26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C88C05F2932EA1000E17C26 /* Assets.xcassets */; };
 		0C88C0632932EA1000E17C26 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C88C0622932EA1000E17C26 /* Preview Assets.xcassets */; };
 		0C88C06D2932EA1000E17C26 /* ChineseWordOfTheDayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C88C06C2932EA1000E17C26 /* ChineseWordOfTheDayTests.swift */; };
 		0C88C0772932EA1000E17C26 /* ChineseWordOfTheDayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C88C0762932EA1000E17C26 /* ChineseWordOfTheDayUITests.swift */; };
 		0C88C0792932EA1000E17C26 /* ChineseWordOfTheDayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C88C0782932EA1000E17C26 /* ChineseWordOfTheDayUITestsLaunchTests.swift */; };
+		0CB207D6293AD56D0066AC21 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CB207D5293AD56D0066AC21 /* WidgetKit.framework */; };
+		0CB207D8293AD56D0066AC21 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CB207D7293AD56D0066AC21 /* SwiftUI.framework */; };
+		0CB207DB293AD56D0066AC21 /* wordOfDayWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB207DA293AD56D0066AC21 /* wordOfDayWidget.swift */; };
+		0CB207DE293AD56E0066AC21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CB207DD293AD56E0066AC21 /* Assets.xcassets */; };
+		0CB207E0293AD56E0066AC21 /* wordOfDayWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 0CB207DC293AD56D0066AC21 /* wordOfDayWidget.intentdefinition */; };
+		0CB207E1293AD56E0066AC21 /* wordOfDayWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 0CB207DC293AD56D0066AC21 /* wordOfDayWidget.intentdefinition */; };
+		0CB207E5293AD56E0066AC21 /* wordOfDayWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0CB207D3293AD56D0066AC21 /* wordOfDayWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,12 +52,40 @@
 			remoteGlobalIDString = 0C88C0572932EA0E00E17C26;
 			remoteInfo = ChineseWordOfTheDay;
 		};
+		0CB207E2293AD56E0066AC21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C88C0502932EA0E00E17C26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0CB207D2293AD56D0066AC21;
+			remoteInfo = wordOfDayWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0CB207E4293AD56E0066AC21 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0CB207E5293AD56E0066AC21 /* wordOfDayWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0C0D19EF2944124D007CD72D /* WordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordView.swift; sourceTree = "<group>"; };
+		0C0D19F229441471007CD72D /* kaiu.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = kaiu.ttf; sourceTree = "<group>"; };
+		0C29EA68293C4E1D00F2C0A7 /* fmdb-bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fmdb-bridging-header.h"; sourceTree = "<group>"; };
+		0C29EA782942BDDA00F2C0A7 /* DictionarySupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionarySupport.swift; sourceTree = "<group>"; };
+		0C29EA7D2943F02C00F2C0A7 /* ChineseWordOfTheDay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChineseWordOfTheDay.entitlements; sourceTree = "<group>"; };
+		0C29EA7E2943F2D700F2C0A7 /* wordOfDayWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = wordOfDayWidgetExtension.entitlements; sourceTree = "<group>"; };
+		0C2C35E229341FDE0069277B /* ChineseDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChineseDictionary.swift; sourceTree = "<group>"; };
 		0C88C0582932EA0E00E17C26 /* ChineseWordOfTheDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChineseWordOfTheDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C88C05B2932EA0F00E17C26 /* ChineseWordOfTheDayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChineseWordOfTheDayApp.swift; sourceTree = "<group>"; };
-		0C88C05D2932EA0F00E17C26 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0C88C05D2932EA0F00E17C26 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0C88C05F2932EA1000E17C26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C88C0622932EA1000E17C26 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0C88C0682932EA1000E17C26 /* ChineseWordOfTheDayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChineseWordOfTheDayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,13 +93,22 @@
 		0C88C0722932EA1000E17C26 /* ChineseWordOfTheDayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChineseWordOfTheDayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C88C0762932EA1000E17C26 /* ChineseWordOfTheDayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChineseWordOfTheDayUITests.swift; sourceTree = "<group>"; };
 		0C88C0782932EA1000E17C26 /* ChineseWordOfTheDayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChineseWordOfTheDayUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0C88C08E29341D4100E17C26 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		0CB207D3293AD56D0066AC21 /* wordOfDayWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = wordOfDayWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CB207D5293AD56D0066AC21 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		0CB207D7293AD56D0066AC21 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		0CB207DA293AD56D0066AC21 /* wordOfDayWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wordOfDayWidget.swift; sourceTree = "<group>"; };
+		0CB207DC293AD56D0066AC21 /* wordOfDayWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = wordOfDayWidget.intentdefinition; sourceTree = "<group>"; };
+		0CB207DD293AD56E0066AC21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0CB207DF293AD56E0066AC21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0C88C0552932EA0E00E17C26 /* Frameworks */ = {
+		0C1D655229342164000E667A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C29EA67293C48BB00F2C0A7 /* FMDB in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,15 +126,66 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0CB207D0293AD56D0066AC21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CB207D8293AD56D0066AC21 /* SwiftUI.framework in Frameworks */,
+				0C29EA772942BD9200F2C0A7 /* FMDB in Frameworks */,
+				0CB207D6293AD56D0066AC21 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C0D19E729440FCD007CD72D /* ProjectFonts */ = {
+			isa = PBXGroup;
+			children = (
+				0C0D19F229441471007CD72D /* kaiu.ttf */,
+			);
+			path = ProjectFonts;
+			sourceTree = "<group>";
+		};
+		0C0D19EB2944106D007CD72D /* BridgingHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				0C29EA68293C4E1D00F2C0A7 /* fmdb-bridging-header.h */,
+			);
+			path = BridgingHeaders;
+			sourceTree = "<group>";
+		};
+		0C0D19F5294429FB007CD72D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0C88C05D2932EA0F00E17C26 /* HomeView.swift */,
+				0C0D19EF2944124D007CD72D /* WordView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0C0D19F629442A22007CD72D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0C29EA782942BDDA00F2C0A7 /* DictionarySupport.swift */,
+				0C88C05B2932EA0F00E17C26 /* ChineseWordOfTheDayApp.swift */,
+				0C88C08E29341D4100E17C26 /* Word.swift */,
+				0C2C35E229341FDE0069277B /* ChineseDictionary.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		0C88C04F2932EA0E00E17C26 = {
 			isa = PBXGroup;
 			children = (
+				0C29EA7E2943F2D700F2C0A7 /* wordOfDayWidgetExtension.entitlements */,
+				0C0D19E729440FCD007CD72D /* ProjectFonts */,
+				0C0D19EB2944106D007CD72D /* BridgingHeaders */,
 				0C88C05A2932EA0E00E17C26 /* ChineseWordOfTheDay */,
 				0C88C06B2932EA1000E17C26 /* ChineseWordOfTheDayTests */,
 				0C88C0752932EA1000E17C26 /* ChineseWordOfTheDayUITests */,
+				0CB207D9293AD56D0066AC21 /* WordOfDayWidget */,
+				0CB207D4293AD56D0066AC21 /* Frameworks */,
 				0C88C0592932EA0E00E17C26 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +196,7 @@
 				0C88C0582932EA0E00E17C26 /* ChineseWordOfTheDay.app */,
 				0C88C0682932EA1000E17C26 /* ChineseWordOfTheDayTests.xctest */,
 				0C88C0722932EA1000E17C26 /* ChineseWordOfTheDayUITests.xctest */,
+				0CB207D3293AD56D0066AC21 /* wordOfDayWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,8 +204,9 @@
 		0C88C05A2932EA0E00E17C26 /* ChineseWordOfTheDay */ = {
 			isa = PBXGroup;
 			children = (
-				0C88C05B2932EA0F00E17C26 /* ChineseWordOfTheDayApp.swift */,
-				0C88C05D2932EA0F00E17C26 /* ContentView.swift */,
+				0C0D19F629442A22007CD72D /* Model */,
+				0C0D19F5294429FB007CD72D /* Views */,
+				0C29EA7D2943F02C00F2C0A7 /* ChineseWordOfTheDay.entitlements */,
 				0C88C05F2932EA1000E17C26 /* Assets.xcassets */,
 				0C88C0612932EA1000E17C26 /* Preview Content */,
 			);
@@ -127,6 +238,26 @@
 			path = ChineseWordOfTheDayUITests;
 			sourceTree = "<group>";
 		};
+		0CB207D4293AD56D0066AC21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CB207D5293AD56D0066AC21 /* WidgetKit.framework */,
+				0CB207D7293AD56D0066AC21 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0CB207D9293AD56D0066AC21 /* WordOfDayWidget */ = {
+			isa = PBXGroup;
+			children = (
+				0CB207DA293AD56D0066AC21 /* wordOfDayWidget.swift */,
+				0CB207DC293AD56D0066AC21 /* wordOfDayWidget.intentdefinition */,
+				0CB207DD293AD56E0066AC21 /* Assets.xcassets */,
+				0CB207DF293AD56E0066AC21 /* Info.plist */,
+			);
+			path = WordOfDayWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,15 +265,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C88C07C2932EA1000E17C26 /* Build configuration list for PBXNativeTarget "ChineseWordOfTheDay" */;
 			buildPhases = (
-				0C88C0542932EA0E00E17C26 /* Sources */,
-				0C88C0552932EA0E00E17C26 /* Frameworks */,
+				0C1D65512934215F000E667A /* Sources */,
+				0C1D655229342164000E667A /* Frameworks */,
 				0C88C0562932EA0E00E17C26 /* Resources */,
+				0CB207E4293AD56E0066AC21 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0CB207E3293AD56E0066AC21 /* PBXTargetDependency */,
 			);
 			name = ChineseWordOfTheDay;
+			packageProductDependencies = (
+				0C29EA66293C48BB00F2C0A7 /* FMDB */,
+			);
 			productName = ChineseWordOfTheDay;
 			productReference = 0C88C0582932EA0E00E17C26 /* ChineseWordOfTheDay.app */;
 			productType = "com.apple.product-type.application";
@@ -183,6 +319,26 @@
 			productReference = 0C88C0722932EA1000E17C26 /* ChineseWordOfTheDayUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		0CB207D2293AD56D0066AC21 /* wordOfDayWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CB207E8293AD56E0066AC21 /* Build configuration list for PBXNativeTarget "wordOfDayWidgetExtension" */;
+			buildPhases = (
+				0CB207CF293AD56D0066AC21 /* Sources */,
+				0CB207D0293AD56D0066AC21 /* Frameworks */,
+				0CB207D1293AD56D0066AC21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wordOfDayWidgetExtension;
+			packageProductDependencies = (
+				0C29EA762942BD9200F2C0A7 /* FMDB */,
+			);
+			productName = wordOfDayWidgetExtension;
+			productReference = 0CB207D3293AD56D0066AC21 /* wordOfDayWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,6 +360,9 @@
 						CreatedOnToolsVersion = 14.0;
 						TestTargetID = 0C88C0572932EA0E00E17C26;
 					};
+					0CB207D2293AD56D0066AC21 = {
+						CreatedOnToolsVersion = 14.0;
+					};
 				};
 			};
 			buildConfigurationList = 0C88C0532932EA0E00E17C26 /* Build configuration list for PBXProject "ChineseWordOfTheDay" */;
@@ -215,6 +374,9 @@
 				Base,
 			);
 			mainGroup = 0C88C04F2932EA0E00E17C26;
+			packageReferences = (
+				0C29EA65293C48BB00F2C0A7 /* XCRemoteSwiftPackageReference "fmdb" */,
+			);
 			productRefGroup = 0C88C0592932EA0E00E17C26 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -222,6 +384,7 @@
 				0C88C0572932EA0E00E17C26 /* ChineseWordOfTheDay */,
 				0C88C0672932EA1000E17C26 /* ChineseWordOfTheDayTests */,
 				0C88C0712932EA1000E17C26 /* ChineseWordOfTheDayUITests */,
+				0CB207D2293AD56D0066AC21 /* wordOfDayWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -233,6 +396,7 @@
 			files = (
 				0C88C0632932EA1000E17C26 /* Preview Assets.xcassets in Resources */,
 				0C88C0602932EA1000E17C26 /* Assets.xcassets in Resources */,
+				0C0D19F329441627007CD72D /* kaiu.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,15 +414,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0CB207D1293AD56D0066AC21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C0D19F429441628007CD72D /* kaiu.ttf in Resources */,
+				0CB207DE293AD56E0066AC21 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0C88C0542932EA0E00E17C26 /* Sources */ = {
+		0C1D65512934215F000E667A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C88C05E2932EA0F00E17C26 /* ContentView.swift in Sources */,
-				0C88C05C2932EA0F00E17C26 /* ChineseWordOfTheDayApp.swift in Sources */,
+				0C1D655329342177000E667A /* Word.swift in Sources */,
+				0C29EA792942BDDA00F2C0A7 /* DictionarySupport.swift in Sources */,
+				0C0D19F02944124D007CD72D /* WordView.swift in Sources */,
+				0C1D655429342177000E667A /* ChineseDictionary.swift in Sources */,
+				0CB207E1293AD56E0066AC21 /* wordOfDayWidget.intentdefinition in Sources */,
+				0C1D655729342177000E667A /* ChineseWordOfTheDayApp.swift in Sources */,
+				0C1D655829342177000E667A /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +445,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C88C06D2932EA1000E17C26 /* ChineseWordOfTheDayTests.swift in Sources */,
+				0C29EA7A2942BDDA00F2C0A7 /* DictionarySupport.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +454,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C88C0792932EA1000E17C26 /* ChineseWordOfTheDayUITestsLaunchTests.swift in Sources */,
+				0C29EA7B2942BDDA00F2C0A7 /* DictionarySupport.swift in Sources */,
 				0C88C0772932EA1000E17C26 /* ChineseWordOfTheDayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CB207CF293AD56D0066AC21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CB207E0293AD56E0066AC21 /* wordOfDayWidget.intentdefinition in Sources */,
+				0CB207DB293AD56D0066AC21 /* wordOfDayWidget.swift in Sources */,
+				0C0D19F729442C13007CD72D /* WordView.swift in Sources */,
+				0C29EA7C2942BDDA00F2C0A7 /* DictionarySupport.swift in Sources */,
+				0C29EA742942BD6300F2C0A7 /* Word.swift in Sources */,
+				0C29EA752942BD6300F2C0A7 /* ChineseDictionary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +484,11 @@
 			isa = PBXTargetDependency;
 			target = 0C88C0572932EA0E00E17C26 /* ChineseWordOfTheDay */;
 			targetProxy = 0C88C0732932EA1000E17C26 /* PBXContainerItemProxy */;
+		};
+		0CB207E3293AD56E0066AC21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0CB207D2293AD56D0066AC21 /* wordOfDayWidgetExtension */;
+			targetProxy = 0CB207E2293AD56E0066AC21 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -345,7 +543,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -399,7 +597,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -412,8 +610,10 @@
 		0C88C07D2932EA1000E17C26 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ChineseWordOfTheDay/ChineseWordOfTheDay.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ChineseWordOfTheDay/Preview Content\"";
@@ -425,6 +625,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -441,8 +642,10 @@
 		0C88C07E2932EA1000E17C26 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ChineseWordOfTheDay/ChineseWordOfTheDay.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ChineseWordOfTheDay/Preview Content\"";
@@ -454,6 +657,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -476,7 +680,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SU6X47WC59;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = matthedm.ChineseWordOfTheDayTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,7 +700,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SU6X47WC59;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = matthedm.ChineseWordOfTheDayTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -515,6 +719,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SU6X47WC59;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = matthedm.ChineseWordOfTheDayUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -533,6 +738,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SU6X47WC59;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = matthedm.ChineseWordOfTheDayUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -540,6 +746,64 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = ChineseWordOfTheDay;
+			};
+			name = Release;
+		};
+		0CB207E6293AD56E0066AC21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = wordOfDayWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SU6X47WC59;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = wordOfDayWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = wordOfDayWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = matthedm.ChineseWordOfTheDay.wordOfDayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0CB207E7293AD56E0066AC21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = wordOfDayWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SU6X47WC59;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = wordOfDayWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = wordOfDayWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = matthedm.ChineseWordOfTheDay.wordOfDayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -582,7 +846,40 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		0CB207E8293AD56E0066AC21 /* Build configuration list for PBXNativeTarget "wordOfDayWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CB207E6293AD56E0066AC21 /* Debug */,
+				0CB207E7293AD56E0066AC21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0C29EA65293C48BB00F2C0A7 /* XCRemoteSwiftPackageReference "fmdb" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ccgus/fmdb";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0C29EA66293C48BB00F2C0A7 /* FMDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C29EA65293C48BB00F2C0A7 /* XCRemoteSwiftPackageReference "fmdb" */;
+			productName = FMDB;
+		};
+		0C29EA762942BD9200F2C0A7 /* FMDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C29EA65293C48BB00F2C0A7 /* XCRemoteSwiftPackageReference "fmdb" */;
+			productName = FMDB;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0C88C0502932EA0E00E17C26 /* Project object */;
 }
