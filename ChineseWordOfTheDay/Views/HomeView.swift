@@ -29,6 +29,14 @@ extension HomeView: View {
             }
    
         }.padding()
+            .onAppear{
+                let refreshManager = RefreshManager.shared
+                refreshManager.loadDataIfNeeded() { success in
+                    if success {
+                        self.support.nextWord()
+                    }
+                }
+            }
     }
 
 }
