@@ -34,6 +34,8 @@
 		0CB5FE05294D3B7400DED7D8 /* WordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0D19EF2944124D007CD72D /* WordView.swift */; };
 		0CB5FE0D294D3C0300DED7D8 /* RefreshManagerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB5FE0C294D3C0300DED7D8 /* RefreshManagerUnitTests.swift */; };
 		0CB5FE13294D3C2000DED7D8 /* RefreshManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB5FDF82947DF0900DED7D8 /* RefreshManager.swift */; };
+		0CB795332953E45B003CEE73 /* words.db in Resources */ = {isa = PBXBuildFile; fileRef = 0CB795322953E45B003CEE73 /* words.db */; };
+		0CB795342953E45B003CEE73 /* words.db in Resources */ = {isa = PBXBuildFile; fileRef = 0CB795322953E45B003CEE73 /* words.db */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +93,7 @@
 		0CB5FDF82947DF0900DED7D8 /* RefreshManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshManager.swift; sourceTree = "<group>"; };
 		0CB5FE0A294D3C0200DED7D8 /* RefreshManagerUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RefreshManagerUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CB5FE0C294D3C0300DED7D8 /* RefreshManagerUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshManagerUnitTests.swift; sourceTree = "<group>"; };
+		0CB795322953E45B003CEE73 /* words.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = words.db; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,8 +165,9 @@
 		0C88C04F2932EA0E00E17C26 = {
 			isa = PBXGroup;
 			children = (
+				0CB795322953E45B003CEE73 /* words.db */,
+				0CB795312953E432003CEE73 /* Resources */,
 				0C29EA7E2943F2D700F2C0A7 /* wordOfDayWidgetExtension.entitlements */,
-				0C0D19E729440FCD007CD72D /* ProjectFonts */,
 				0C0D19EB2944106D007CD72D /* BridgingHeaders */,
 				0C88C05A2932EA0E00E17C26 /* ChineseWordOfTheDay */,
 				0CB207D9293AD56D0066AC21 /* WordOfDayWidget */,
@@ -229,6 +233,14 @@
 				0CB5FE0C294D3C0300DED7D8 /* RefreshManagerUnitTests.swift */,
 			);
 			path = RefreshManagerUnitTests;
+			sourceTree = "<group>";
+		};
+		0CB795312953E432003CEE73 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0C0D19E729440FCD007CD72D /* ProjectFonts */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,6 +359,7 @@
 				0C88C0632932EA1000E17C26 /* Preview Assets.xcassets in Resources */,
 				0C88C0602932EA1000E17C26 /* Assets.xcassets in Resources */,
 				0C0D19F329441627007CD72D /* kaiu.ttf in Resources */,
+				0CB795332953E45B003CEE73 /* words.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +367,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CB795342953E45B003CEE73 /* words.db in Resources */,
 				0C0D19F429441628007CD72D /* kaiu.ttf in Resources */,
 				0CB207DE293AD56E0066AC21 /* Assets.xcassets in Resources */,
 			);
