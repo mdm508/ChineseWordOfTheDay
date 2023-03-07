@@ -9,33 +9,44 @@ import WidgetKit
 import SwiftUI
 import Intents
 
-struct Provider: IntentTimelineProvider {
-    func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date(), configuration: ConfigurationIntent())
+struct Provider: TimelineProvider{
+    typealias Entry = WidgetContent
+    func placeholder(in context: Context) -> WidgetContent {
+        WidgetContent(date: Date(), currentWord: "企鵝", pinyin: "Qi4e2")
     }
-    func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: Date(), configuration: configuration)
-        completion(entry)
+    @AppStorage("wordIndex", store: UserDefaults(suiteName: "group.matthedm.wod.chinese")) var currentWordIndex: Int = 0
+    func getSnapshot(in context: Context, completion: @escaping (WidgetContent) -> ()) {
+        let dataController = DataController()
+        let word = dataController.getWord(at: currentWordIndex)
+        let widgetContent = WidgetContent(date: Date(), currentWord: word.traditional ?? "",
+                                          pinyin: word.pinyin ?? "")
+        completion(widgetContent)
     }
-    func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
-        let entries: [SimpleEntry] = [SimpleEntry(date: Date(), configuration: configuration)]
-        let timeline = Timeline(entries: entries, policy: .atEnd)
+
+    func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
+        let dataController = DataController()
+        let word = dataController.getWord(at: self.currentWordIndex)
+        let widgetContent = WidgetContent(date: Date(), currentWord: word.traditional ?? "",
+                                          pinyin: word.pinyin ?? "")
+        let timeline = Timeline(entries: [widgetContent], policy: .atEnd)
         completion(timeline)
     }
 }
 
-struct SimpleEntry: TimelineEntry {
+struct WidgetContent: TimelineEntry {
     let date: Date
-    let configuration: ConfigurationIntent
-    let support: DictionarySupport = DictionarySupport()
+    let currentWord: String
+    let pinyin: String
 }
 
 struct wordOfDayWidgetEntryView : View {
     var entry: Provider.Entry
+
+
     var body: some View {
         VStack{
-            WordView(self.entry.support.currentWord.traditional)
-            Text(self.entry.support.currentWord.pinyin)
+            WordView(entry.currentWord)
+            Text(entry.pinyin)
         }
     }
 }
@@ -45,7 +56,7 @@ struct wordOfDayWidget: Widget {
     let kind: String = "wordOfDayWidget"
 
     var body: some WidgetConfiguration {
-        IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
+        StaticConfiguration(kind: kind, provider: Provider()) { entry in
             wordOfDayWidgetEntryView(entry: entry)
         }
         .configurationDisplayName("Chinese Word of the Day Widget")
@@ -54,9 +65,22 @@ struct wordOfDayWidget: Widget {
     }
 }
 
+//var body: some WidgetConfiguration {
+//      StaticConfiguration(
+//          kind: "com.mygame.game-status",
+//          provider: GameStatusProvider(),
+//      ) { entry in
+//          GameStatusView(entry.gameStatus)
+//      }
+//      .configurationDisplayName("Game Status")
+//      .description("Shows an overview of your game status")
+//      .supportedFamilies([.systemSmall, .systemMedium, .systemLarge])
+//  }
+//}
+
 struct wordOfDayWidget_Previews: PreviewProvider {
     static var previews: some View {
-        wordOfDayWidgetEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()))
+        wordOfDayWidgetEntryView(entry: WidgetContent(date: Date(),currentWord: "企鵝", pinyin: "Qi4e2"))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }

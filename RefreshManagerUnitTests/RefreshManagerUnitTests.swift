@@ -6,21 +6,30 @@
 //
 
 import XCTest
-
+import ChineseWordOfTheDay
 
 final class RefreshManagerUnitTests: XCTestCase {
-    func test_lastRerfreshDateOver24Hours_updatesRefresh() throws {
-     let birthday = DateComponents(calendar: Calendar(identifier: .gregorian), timeZone: .current, year: 1995, month: 3, day: 29).date!
-     let manager = RefreshManager(defaults: MockUserDefaults(lastRefreshDate: birthday))
+    func test_whenStoredDateIsMoreThanOneDayAwayFromCurrentDate_doesRefresh() throws {
+         let today = DateComponents(calendar: Calendar(identifier: .gregorian),
+                                       year: 1995,
+                                       month: 3,
+                                       day: 29).date!
+        let manager = RefreshManager(defaults: MockUserDefaults(lastRefreshDate: today))
+        // Manager should indicate that a refresh happened
         manager.loadDataIfNeeded(){success in XCTAssertTrue(success)}
         let updatedDate = manager.getCurrentRefreshDate() as! Date
-        let secondsInADay: TimeInterval = 60*60*24
-        XCTAssertLessThan(updatedDate.distance(to: Date()), secondsInADay)
+        let calendar = Calendar.current
+        XCTAssertEqual(calendar.startOfDay(for: updatedDate), calendar.startOfDay(for: Date()))
     }
     func test_refreshDateIsToday_doesNotRefresh(){
         let manager = RefreshManager(defaults: MockUserDefaults(lastRefreshDate: Date()))
         manager.loadDataIfNeeded(){success in XCTAssertFalse(success)}
         
+    }
+    func test_whenThereIsNoDateStoredInUserDefaults_doesRefresh(){
+        
+        let manager = RefreshManager(defaults: MockUserDefaults(lastRefreshDate: nil))
+        manager.loadDataIfNeeded(){success in XCTAssertTrue(success)}
     }
 
 }

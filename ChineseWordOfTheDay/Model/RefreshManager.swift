@@ -17,9 +17,11 @@ class RefreshManager: NSObject {
     }
 }
 extension RefreshManager{
+    /// Update last update time if needed.
+    /// - Parameter completion: indicate wether a refresh occured or not
     func loadDataIfNeeded(completion: (Bool) -> Void) {
         if isRefreshRequired() {
-            // load the data
+            // update the old date to today
             defaults.set(Date(), forKey: defaultsKey)
             completion(true)
         } else {
@@ -30,21 +32,19 @@ extension RefreshManager{
         return defaults.object(forKey: defaultsKey)
     }
     private func isRefreshRequired() -> Bool {
-
         guard let lastRefreshDate = getCurrentRefreshDate() as? Date else {
             return true
         }
-
-        if let diff = calender.dateComponents([.hour], from: lastRefreshDate, to: Date()).hour, diff > 24 {
-            return true
+        if let diffInDaysBetweenLastRefreshAndToday = calender.dateComponents([.day], from: lastRefreshDate, to: Date()).day {
+            return diffInDaysBetweenLastRefreshAndToday >= 1
         } else {
             return false
         }
     }
 }
 class MockUserDefaults: UserDefaults{
-    var lastRefreshDate: Date
-    init(lastRefreshDate: Date){
+    var lastRefreshDate: Date?
+    init(lastRefreshDate: Date?){
         self.lastRefreshDate = lastRefreshDate
         super.init(suiteName: nil)!
     }
@@ -58,5 +58,4 @@ class MockUserDefaults: UserDefaults{
         self.lastRefreshDate = date
         
     }
-    
 }

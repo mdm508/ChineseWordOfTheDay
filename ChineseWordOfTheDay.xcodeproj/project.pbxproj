@@ -10,18 +10,16 @@
 		0C0D19F02944124D007CD72D /* WordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0D19EF2944124D007CD72D /* WordView.swift */; };
 		0C0D19F329441627007CD72D /* kaiu.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0C0D19F229441471007CD72D /* kaiu.ttf */; };
 		0C0D19F429441628007CD72D /* kaiu.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0C0D19F229441471007CD72D /* kaiu.ttf */; };
-		0C1D655329342177000E667A /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C88C08E29341D4100E17C26 /* Word.swift */; };
-		0C1D655429342177000E667A /* ChineseDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2C35E229341FDE0069277B /* ChineseDictionary.swift */; };
 		0C1D655729342177000E667A /* ChineseWordOfTheDayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C88C05B2932EA0F00E17C26 /* ChineseWordOfTheDayApp.swift */; };
-		0C1D655829342177000E667A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C88C05D2932EA0F00E17C26 /* HomeView.swift */; };
 		0C29EA67293C48BB00F2C0A7 /* FMDB in Frameworks */ = {isa = PBXBuildFile; productRef = 0C29EA66293C48BB00F2C0A7 /* FMDB */; };
-		0C29EA742942BD6300F2C0A7 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C88C08E29341D4100E17C26 /* Word.swift */; };
-		0C29EA752942BD6300F2C0A7 /* ChineseDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2C35E229341FDE0069277B /* ChineseDictionary.swift */; };
 		0C29EA772942BD9200F2C0A7 /* FMDB in Frameworks */ = {isa = PBXBuildFile; productRef = 0C29EA762942BD9200F2C0A7 /* FMDB */; };
-		0C29EA792942BDDA00F2C0A7 /* DictionarySupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C29EA782942BDDA00F2C0A7 /* DictionarySupport.swift */; };
-		0C29EA7C2942BDDA00F2C0A7 /* DictionarySupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C29EA782942BDDA00F2C0A7 /* DictionarySupport.swift */; };
 		0C88C0602932EA1000E17C26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C88C05F2932EA1000E17C26 /* Assets.xcassets */; };
 		0C88C0632932EA1000E17C26 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C88C0622932EA1000E17C26 /* Preview Assets.xcassets */; };
+		0C9DB900299DB8D100E6D4F9 /* SwiftCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 0C9DB8FF299DB8D100E6D4F9 /* SwiftCSV */; };
+		0CADBC6E299C324F00A805DD /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CADBC6D299C324F00A805DD /* DataController.swift */; };
+		0CADBC71299C35AE00A805DD /* WordOfTheDay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0CADBC6F299C35AE00A805DD /* WordOfTheDay.xcdatamodeld */; };
+		0CADBC73299C365D00A805DD /* TodaysWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CADBC72299C365D00A805DD /* TodaysWord.swift */; };
+		0CADBC75299C61F000A805DD /* pos_and_frequency.csv in Resources */ = {isa = PBXBuildFile; fileRef = 0CADBC74299C61F000A805DD /* pos_and_frequency.csv */; };
 		0CB207D6293AD56D0066AC21 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CB207D5293AD56D0066AC21 /* WidgetKit.framework */; };
 		0CB207D8293AD56D0066AC21 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CB207D7293AD56D0066AC21 /* SwiftUI.framework */; };
 		0CB207DB293AD56D0066AC21 /* wordOfDayWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB207DA293AD56D0066AC21 /* wordOfDayWidget.swift */; };
@@ -29,13 +27,16 @@
 		0CB207E0293AD56E0066AC21 /* wordOfDayWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 0CB207DC293AD56D0066AC21 /* wordOfDayWidget.intentdefinition */; };
 		0CB207E1293AD56E0066AC21 /* wordOfDayWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 0CB207DC293AD56D0066AC21 /* wordOfDayWidget.intentdefinition */; };
 		0CB207E5293AD56E0066AC21 /* wordOfDayWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0CB207D3293AD56D0066AC21 /* wordOfDayWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		0CB5FDF92947E05E00DED7D8 /* RefreshManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB5FDF82947DF0900DED7D8 /* RefreshManager.swift */; };
-		0CB5FE04294D3AED00DED7D8 /* RefreshManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB5FDF82947DF0900DED7D8 /* RefreshManager.swift */; };
 		0CB5FE05294D3B7400DED7D8 /* WordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0D19EF2944124D007CD72D /* WordView.swift */; };
 		0CB5FE0D294D3C0300DED7D8 /* RefreshManagerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB5FE0C294D3C0300DED7D8 /* RefreshManagerUnitTests.swift */; };
 		0CB5FE13294D3C2000DED7D8 /* RefreshManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB5FDF82947DF0900DED7D8 /* RefreshManager.swift */; };
-		0CB795332953E45B003CEE73 /* words.db in Resources */ = {isa = PBXBuildFile; fileRef = 0CB795322953E45B003CEE73 /* words.db */; };
-		0CB795342953E45B003CEE73 /* words.db in Resources */ = {isa = PBXBuildFile; fileRef = 0CB795322953E45B003CEE73 /* words.db */; };
+		0CC0E78529B7B3B0005C3ED4 /* WordOfTheDay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0CADBC6F299C35AE00A805DD /* WordOfTheDay.xcdatamodeld */; };
+		0CC0E78629B7B462005C3ED4 /* RefreshManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB5FDF82947DF0900DED7D8 /* RefreshManager.swift */; };
+		0CD75FFC29A7E84D0078853D /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = 0CD75FFB29A7E84D0078853D /* AppIcon.appiconset */; };
+		0CD75FFD29A7E84D0078853D /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = 0CD75FFB29A7E84D0078853D /* AppIcon.appiconset */; };
+		0CD75FFE29B02D840078853D /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CADBC6D299C324F00A805DD /* DataController.swift */; };
+		0CD75FFF29B02DC40078853D /* WordOfTheDay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0CADBC6F299C35AE00A805DD /* WordOfTheDay.xcdatamodeld */; };
+		0CD7600129B02F2D0078853D /* SwiftCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 0CD7600029B02F2D0078853D /* SwiftCSV */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,16 +74,16 @@
 		0C0D19EF2944124D007CD72D /* WordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordView.swift; sourceTree = "<group>"; };
 		0C0D19F229441471007CD72D /* kaiu.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = kaiu.ttf; sourceTree = "<group>"; };
 		0C29EA68293C4E1D00F2C0A7 /* fmdb-bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fmdb-bridging-header.h"; sourceTree = "<group>"; };
-		0C29EA782942BDDA00F2C0A7 /* DictionarySupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionarySupport.swift; sourceTree = "<group>"; };
 		0C29EA7D2943F02C00F2C0A7 /* ChineseWordOfTheDay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChineseWordOfTheDay.entitlements; sourceTree = "<group>"; };
 		0C29EA7E2943F2D700F2C0A7 /* wordOfDayWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = wordOfDayWidgetExtension.entitlements; sourceTree = "<group>"; };
-		0C2C35E229341FDE0069277B /* ChineseDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChineseDictionary.swift; sourceTree = "<group>"; };
 		0C88C0582932EA0E00E17C26 /* ChineseWordOfTheDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChineseWordOfTheDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C88C05B2932EA0F00E17C26 /* ChineseWordOfTheDayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChineseWordOfTheDayApp.swift; sourceTree = "<group>"; };
-		0C88C05D2932EA0F00E17C26 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0C88C05F2932EA1000E17C26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C88C0622932EA1000E17C26 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0C88C08E29341D4100E17C26 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		0CADBC6D299C324F00A805DD /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		0CADBC70299C35AE00A805DD /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		0CADBC72299C365D00A805DD /* TodaysWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaysWord.swift; sourceTree = "<group>"; };
+		0CADBC74299C61F000A805DD /* pos_and_frequency.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pos_and_frequency.csv; sourceTree = "<group>"; };
 		0CB207D3293AD56D0066AC21 /* wordOfDayWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = wordOfDayWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CB207D5293AD56D0066AC21 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		0CB207D7293AD56D0066AC21 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -93,7 +94,7 @@
 		0CB5FDF82947DF0900DED7D8 /* RefreshManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshManager.swift; sourceTree = "<group>"; };
 		0CB5FE0A294D3C0200DED7D8 /* RefreshManagerUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RefreshManagerUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CB5FE0C294D3C0300DED7D8 /* RefreshManagerUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshManagerUnitTests.swift; sourceTree = "<group>"; };
-		0CB795322953E45B003CEE73 /* words.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = words.db; sourceTree = "<group>"; };
+		0CD75FFB29A7E84D0078853D /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppIcon.appiconset; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +103,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C29EA67293C48BB00F2C0A7 /* FMDB in Frameworks */,
+				0C9DB900299DB8D100E6D4F9 /* SwiftCSV in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +112,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CB207D8293AD56D0066AC21 /* SwiftUI.framework in Frameworks */,
+				0CD7600129B02F2D0078853D /* SwiftCSV in Frameworks */,
 				0C29EA772942BD9200F2C0A7 /* FMDB in Frameworks */,
 				0CB207D6293AD56D0066AC21 /* WidgetKit.framework in Frameworks */,
 			);
@@ -144,7 +147,8 @@
 		0C0D19F5294429FB007CD72D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0C88C05D2932EA0F00E17C26 /* HomeView.swift */,
+				0C88C05B2932EA0F00E17C26 /* ChineseWordOfTheDayApp.swift */,
+				0CADBC72299C365D00A805DD /* TodaysWord.swift */,
 				0C0D19EF2944124D007CD72D /* WordView.swift */,
 			);
 			path = Views;
@@ -153,11 +157,9 @@
 		0C0D19F629442A22007CD72D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0CADBC6F299C35AE00A805DD /* WordOfTheDay.xcdatamodeld */,
 				0CB5FDF82947DF0900DED7D8 /* RefreshManager.swift */,
-				0C29EA782942BDDA00F2C0A7 /* DictionarySupport.swift */,
-				0C88C05B2932EA0F00E17C26 /* ChineseWordOfTheDayApp.swift */,
-				0C88C08E29341D4100E17C26 /* Word.swift */,
-				0C2C35E229341FDE0069277B /* ChineseDictionary.swift */,
+				0CADBC6D299C324F00A805DD /* DataController.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -165,9 +167,8 @@
 		0C88C04F2932EA0E00E17C26 = {
 			isa = PBXGroup;
 			children = (
-				0CB795322953E45B003CEE73 /* words.db */,
-				0CB795312953E432003CEE73 /* Resources */,
 				0C29EA7E2943F2D700F2C0A7 /* wordOfDayWidgetExtension.entitlements */,
+				0CB795312953E432003CEE73 /* Resources */,
 				0C0D19EB2944106D007CD72D /* BridgingHeaders */,
 				0C88C05A2932EA0E00E17C26 /* ChineseWordOfTheDay */,
 				0CB207D9293AD56D0066AC21 /* WordOfDayWidget */,
@@ -194,6 +195,7 @@
 				0C0D19F5294429FB007CD72D /* Views */,
 				0C29EA7D2943F02C00F2C0A7 /* ChineseWordOfTheDay.entitlements */,
 				0C88C05F2932EA1000E17C26 /* Assets.xcassets */,
+				0CD75FFB29A7E84D0078853D /* AppIcon.appiconset */,
 				0C88C0612932EA1000E17C26 /* Preview Content */,
 			);
 			path = ChineseWordOfTheDay;
@@ -238,6 +240,7 @@
 		0CB795312953E432003CEE73 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0CADBC74299C61F000A805DD /* pos_and_frequency.csv */,
 				0C0D19E729440FCD007CD72D /* ProjectFonts */,
 			);
 			path = Resources;
@@ -263,6 +266,7 @@
 			name = ChineseWordOfTheDay;
 			packageProductDependencies = (
 				0C29EA66293C48BB00F2C0A7 /* FMDB */,
+				0C9DB8FF299DB8D100E6D4F9 /* SwiftCSV */,
 			);
 			productName = ChineseWordOfTheDay;
 			productReference = 0C88C0582932EA0E00E17C26 /* ChineseWordOfTheDay.app */;
@@ -283,6 +287,7 @@
 			name = wordOfDayWidgetExtension;
 			packageProductDependencies = (
 				0C29EA762942BD9200F2C0A7 /* FMDB */,
+				0CD7600029B02F2D0078853D /* SwiftCSV */,
 			);
 			productName = wordOfDayWidgetExtension;
 			productReference = 0CB207D3293AD56D0066AC21 /* wordOfDayWidgetExtension.appex */;
@@ -339,6 +344,7 @@
 			mainGroup = 0C88C04F2932EA0E00E17C26;
 			packageReferences = (
 				0C29EA65293C48BB00F2C0A7 /* XCRemoteSwiftPackageReference "fmdb" */,
+				0C9DB8FE299DB8D100E6D4F9 /* XCRemoteSwiftPackageReference "SwiftCSV" */,
 			);
 			productRefGroup = 0C88C0592932EA0E00E17C26 /* Products */;
 			projectDirPath = "";
@@ -358,8 +364,9 @@
 			files = (
 				0C88C0632932EA1000E17C26 /* Preview Assets.xcassets in Resources */,
 				0C88C0602932EA1000E17C26 /* Assets.xcassets in Resources */,
+				0CADBC75299C61F000A805DD /* pos_and_frequency.csv in Resources */,
 				0C0D19F329441627007CD72D /* kaiu.ttf in Resources */,
-				0CB795332953E45B003CEE73 /* words.db in Resources */,
+				0CD75FFC29A7E84D0078853D /* AppIcon.appiconset in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,7 +374,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CB795342953E45B003CEE73 /* words.db in Resources */,
+				0CD75FFD29A7E84D0078853D /* AppIcon.appiconset in Resources */,
 				0C0D19F429441628007CD72D /* kaiu.ttf in Resources */,
 				0CB207DE293AD56E0066AC21 /* Assets.xcassets in Resources */,
 			);
@@ -387,14 +394,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C1D655329342177000E667A /* Word.swift in Sources */,
-				0CB5FDF92947E05E00DED7D8 /* RefreshManager.swift in Sources */,
-				0C29EA792942BDDA00F2C0A7 /* DictionarySupport.swift in Sources */,
 				0C0D19F02944124D007CD72D /* WordView.swift in Sources */,
-				0C1D655429342177000E667A /* ChineseDictionary.swift in Sources */,
+				0CADBC6E299C324F00A805DD /* DataController.swift in Sources */,
 				0CB207E1293AD56E0066AC21 /* wordOfDayWidget.intentdefinition in Sources */,
+				0CADBC71299C35AE00A805DD /* WordOfTheDay.xcdatamodeld in Sources */,
 				0C1D655729342177000E667A /* ChineseWordOfTheDayApp.swift in Sources */,
-				0C1D655829342177000E667A /* HomeView.swift in Sources */,
+				0CADBC73299C365D00A805DD /* TodaysWord.swift in Sources */,
+				0CC0E78629B7B462005C3ED4 /* RefreshManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,13 +408,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CB5FE04294D3AED00DED7D8 /* RefreshManager.swift in Sources */,
+				0CD75FFF29B02DC40078853D /* WordOfTheDay.xcdatamodeld in Sources */,
+				0CD75FFE29B02D840078853D /* DataController.swift in Sources */,
 				0CB207E0293AD56E0066AC21 /* wordOfDayWidget.intentdefinition in Sources */,
 				0CB5FE05294D3B7400DED7D8 /* WordView.swift in Sources */,
 				0CB207DB293AD56D0066AC21 /* wordOfDayWidget.swift in Sources */,
-				0C29EA7C2942BDDA00F2C0A7 /* DictionarySupport.swift in Sources */,
-				0C29EA742942BD6300F2C0A7 /* Word.swift in Sources */,
-				0C29EA752942BD6300F2C0A7 /* ChineseDictionary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +422,7 @@
 			files = (
 				0CB5FE0D294D3C0300DED7D8 /* RefreshManagerUnitTests.swift in Sources */,
 				0CB5FE13294D3C2000DED7D8 /* RefreshManager.swift in Sources */,
+				0CC0E78529B7B3B0005C3ED4 /* WordOfTheDay.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -761,6 +766,14 @@
 				kind = branch;
 			};
 		};
+		0C9DB8FE299DB8D100E6D4F9 /* XCRemoteSwiftPackageReference "SwiftCSV" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swiftcsv/SwiftCSV";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -774,7 +787,30 @@
 			package = 0C29EA65293C48BB00F2C0A7 /* XCRemoteSwiftPackageReference "fmdb" */;
 			productName = FMDB;
 		};
+		0C9DB8FF299DB8D100E6D4F9 /* SwiftCSV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C9DB8FE299DB8D100E6D4F9 /* XCRemoteSwiftPackageReference "SwiftCSV" */;
+			productName = SwiftCSV;
+		};
+		0CD7600029B02F2D0078853D /* SwiftCSV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C9DB8FE299DB8D100E6D4F9 /* XCRemoteSwiftPackageReference "SwiftCSV" */;
+			productName = SwiftCSV;
+		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		0CADBC6F299C35AE00A805DD /* WordOfTheDay.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0CADBC70299C35AE00A805DD /* Model.xcdatamodel */,
+			);
+			currentVersion = 0CADBC70299C35AE00A805DD /* Model.xcdatamodel */;
+			path = WordOfTheDay.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0C88C0502932EA0E00E17C26 /* Project object */;
 }

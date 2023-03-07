@@ -10,3 +10,10 @@
 #import "FMDB.h"
 
 #endif /* fmdb_bridging_header_h */
+
+
+#ifndef swiftcsv_bridging_header_h
+#define swiftcsv_bridging_header_h
+#import "SwiftCSV.h"
+
+#endif /* fmdb_bridging_header_h */
