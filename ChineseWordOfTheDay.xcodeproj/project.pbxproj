@@ -32,6 +32,7 @@
 		0CB5FE13294D3C2000DED7D8 /* RefreshManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB5FDF82947DF0900DED7D8 /* RefreshManager.swift */; };
 		0CC0E78529B7B3B0005C3ED4 /* WordOfTheDay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0CADBC6F299C35AE00A805DD /* WordOfTheDay.xcdatamodeld */; };
 		0CC0E78629B7B462005C3ED4 /* RefreshManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB5FDF82947DF0900DED7D8 /* RefreshManager.swift */; };
+		0CC0E78729BA4409005C3ED4 /* pos_and_frequency.csv in Resources */ = {isa = PBXBuildFile; fileRef = 0CADBC74299C61F000A805DD /* pos_and_frequency.csv */; };
 		0CD75FFC29A7E84D0078853D /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = 0CD75FFB29A7E84D0078853D /* AppIcon.appiconset */; };
 		0CD75FFD29A7E84D0078853D /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = 0CD75FFB29A7E84D0078853D /* AppIcon.appiconset */; };
 		0CD75FFE29B02D840078853D /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CADBC6D299C324F00A805DD /* DataController.swift */; };
@@ -374,6 +375,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CC0E78729BA4409005C3ED4 /* pos_and_frequency.csv in Resources */,
 				0CD75FFD29A7E84D0078853D /* AppIcon.appiconset in Resources */,
 				0C0D19F429441628007CD72D /* kaiu.ttf in Resources */,
 				0CB207DE293AD56E0066AC21 /* Assets.xcassets in Resources */,

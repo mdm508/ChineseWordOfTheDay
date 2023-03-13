@@ -9,12 +9,14 @@ import SwiftUI
 
 @main
 struct ChineseWordOfTheDayApp: App {
-    
+
     private let dataController: DataController = DataController()
     var body: some Scene {
         WindowGroup {
             TodaysWord()
+                .environment(\.managedObjectContext, dataController.container.viewContext)
                 .environmentObject(dataController)
+
         }
     }
 }

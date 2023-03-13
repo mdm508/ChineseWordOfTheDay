@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21279" systemVersion="21G115" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="MyWord" representedClassName="MyWord" syncable="YES" codeGenerationType="class">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21279" systemVersion="22D68" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="MyWord" representedClassName="MyWord" versionHashModifier="4" syncable="YES" codeGenerationType="class">
         <attribute name="allPos" optional="YES" attributeType="String"/>
         <attribute name="domPos" optional="YES" attributeType="String"/>
         <attribute name="english" optional="YES" attributeType="String"/>
@@ -8,5 +8,9 @@
         <attribute name="pinyin" optional="YES" attributeType="String"/>
         <attribute name="simplified" optional="YES" attributeType="String"/>
         <attribute name="traditional" optional="YES" attributeType="String"/>
+        <fetchIndex name="tradAndPercent">
+            <fetchIndexElement property="percentageInFilms" type="Binary" order="ascending"/>
+            <fetchIndexElement property="traditional" type="Binary" order="ascending"/>
+        </fetchIndex>
     </entity>
 </model>
