@@ -21,33 +21,48 @@ class DataController {
             UserDefaults.standard.setValue(self.currentWordIndex, forKey: "wordIndex")
         }
     }
-    init(){
+    init(inMemory: Bool = false){
         // Read currentWordIndex from UserDefaults
         let userDefaults = UserDefaults(suiteName: "group.matthedm.wod.chinese")!
         let initialWordIndex = userDefaults.integer(forKey: "wordIndex")
         currentWordIndex = initialWordIndex
+        
         // Initialize container
-        container = NSPersistentContainer(name: "WordOfTheDay")
-        privateContext = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)
-        privateContext.parent = self.container.viewContext
-        let storeURL = URL.storeURL(for: "group.matthedm.wod.chinese", databaseName: "WordOfTheDay")
-        let storeDescription = NSPersistentStoreDescription(url: storeURL)
-        storeDescription.type = NSInMemoryStoreType // Comment out if not testing
-        container.persistentStoreDescriptions = [storeDescription]
-        container.loadPersistentStores{ description, error in
-            if let error = error {
-                print("Core Data failed to load: \(error.localizedDescription)")
+        self.container = NSPersistentContainer(name: "WordOfTheDay")
+            if inMemory {
+//                storeDescription.type = NSInMemoryStoreType // Comment out if not testing
+                container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
+            } else {
+                let storeURL = URL.storeURL(for: "group.matthedm.wod.chinese", databaseName: "WordOfTheDay")
+                container.persistentStoreDescriptions.first!.url = storeURL
             }
-        }
+        self.container.loadPersistentStores(completionHandler: {(storeDescription, error) in
+            if let error = error as NSError? {
+                // Replace this implementation with code to handle the error appropriately.
+                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+                
+                /*
+                 Typical reasons for an error here include:
+                 * The parent directory does not exist, cannot be created, or disallows writing.
+                 * The persistent store is not accessible, due to permissions or data protection when the device is locked.
+                 * The device is out of space.
+                 * The store could not be migrated to the current model version.
+                 Check the error message to determine what the actual problem was.
+                 */
+                fatalError("Unresolved error \(error), \(error.userInfo)")
+            }
+        })
+        
+            self.privateContext = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)
+            self.privateContext.parent = self.container.viewContext
         if !self.storeIsPopulated() {
-                 print("populating store")
-                 self.loadWordsFromCsvIntoDB()
-                 print("done")
-             } else {
-                 print("store is full already")
-             }
-         
-        print("done with init")
+                print("populating store")
+                self.loadWordsFromCsvIntoDB()
+                print("done")
+            } else {
+                print("store is full already")
+            }
+            print("done with init")
     }
 }
 extension DataController {
@@ -90,21 +105,25 @@ extension DataController: ObservableObject {
         // Load and save the some objects synchronously
         // This is needed because its possible that user user default value of currentWordIndex a number biger than 0
         // In most cases currentWordIndex will be small enough that user can experience benefit of a fast load.
-        let amountToLoadSynchronously = self.currentWordIndex + 1
         let viewContext = self.container.viewContext
-        loadWords(from: csv, context: viewContext, startIndex: 0, endIndex: min(amountToLoadSynchronously, csv.rows.count))
+        loadWords(from: csv, context: viewContext, startIndex: 0, endIndex: min(self.amountToLoadSynchronously, csv.rows.count))
+        print("done with main sync loads")
         // Load and save the remaining objects asynchronously on a background thread
         privateContext.perform { [unowned self] in
-            loadWords(from: csv, context: self.privateContext, startIndex: amountToLoadSynchronously, endIndex: csv.rows.count)
+            loadWords(from: csv, context: self.privateContext, startIndex: self.amountToLoadSynchronously, endIndex: csv.rows.count)
+            try! self.privateContext.save()
+
             do {
-                try self.privateContext.save()
+//                try self.privateContext.save()
                 viewContext.performAndWait {
+                    print("Saving to main contex")
                     try! viewContext.save()
                     print("done with all")
                 }
             } catch {
                 print("Problem saving contexts")
             }
+            
         }
     }
     func loadWords(from csv: CSV<Named>, context: NSManagedObjectContext, startIndex: Int, endIndex: Int) {
@@ -119,12 +138,17 @@ extension DataController: ObservableObject {
             word.allPos = row["All.PoS"]
             word.domPos = row["Dominant.PoS"]
         }
+        print("saving")
         try! context.save()
     }
 }
 extension DataController{
+    private var amountToLoadSynchronously: Int{
+        self.currentWordIndex + DataController.Constants.indexBuffer
+    }
     struct Constants {
         static let csvName = "pos_and_frequency"
+        static let indexBuffer = 100
     }
 }
 
@@ -140,7 +164,7 @@ public extension URL {
 
 
 /* Csv fied names
-"Traditional",
+ "Traditional",
  "Simplified",
  "Eng.Tran.",
  "Length",
@@ -156,4 +180,4 @@ public extension URL {
  "Dominant.PoS.Freq",
  "All.PoS",
  "All.PoS.Freq"
-*/
+ */
