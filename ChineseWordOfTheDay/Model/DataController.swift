@@ -112,17 +112,12 @@ extension DataController: ObservableObject {
         privateContext.perform { [unowned self] in
             loadWords(from: csv, context: self.privateContext, startIndex: self.amountToLoadSynchronously, endIndex: csv.rows.count)
             try! self.privateContext.save()
-
-            do {
-//                try self.privateContext.save()
                 viewContext.performAndWait {
                     print("Saving to main contex")
                     try! viewContext.save()
                     print("done with all")
                 }
-            } catch {
-                print("Problem saving contexts")
-            }
+            
             
         }
     }

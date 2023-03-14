@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct ChineseWordOfTheDayApp: App {
 
-    private let dataController: DataController = DataController(inMemory: true)
+    private let dataController: DataController = DataController(inMemory: false)
     var body: some Scene {
         WindowGroup {
             TodaysWord()
