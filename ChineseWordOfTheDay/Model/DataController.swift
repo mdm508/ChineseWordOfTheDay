@@ -16,18 +16,19 @@ class DataController {
         return self.container.viewContext
     }()
     var privateContext: NSManagedObjectContext
-    @Published var currentWordIndex: Int {
+    private(set) var currentWordIndex: Int {
         didSet {
             let userDefaults = UserDefaults(suiteName: Self.Constants.appGroupId)!
             userDefaults.set(self.currentWordIndex, forKey: Self.Constants.wordIndexKey)
+            self.currentWord = self.getWord()
         }
     }
+    @Published var currentWord: MyWord!
     init(inMemory: Bool = false){
         // Read currentWordIndex from UserDefaults
         let userDefaults = UserDefaults(suiteName: Self.Constants.appGroupId)!
         let initialWordIndex = userDefaults.integer(forKey: Self.Constants.wordIndexKey)
-        currentWordIndex = initialWordIndex
-        
+        self.currentWordIndex = initialWordIndex
         // Initialize container
         self.container = NSPersistentContainer(name: Self.Constants.dbName)
             if inMemory {
@@ -63,7 +64,8 @@ class DataController {
             } else {
                 print("store is full already")
             }
-            print("done with init")
+        self.currentWord = self.getWord() // needed because didSet isn't called when initialiving properties
+
     }
 }
 extension DataController {

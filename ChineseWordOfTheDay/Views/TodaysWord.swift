@@ -32,21 +32,23 @@ extension TodaysWord: View {
                 Text(word.pinyin ?? "")
                 Text(word.english ?? "")
                 Spacer()
-                Text(String(self.currentIndex))
+                Text(String(self.dataController.currentWordIndex))
                 HStack{
                     Button("prev",action: {self.dataController.previousWord()}).disabled(self.currentIndex == 0)
                     Button("next", action: {self.dataController.nextWord()})
                 }
             } else {
                 Text("Initializing database")
+                    Button("next", action: {self.dataController.nextWord()})
             }
         }
             .onAppear{
                 // set up subscription to changes in index
-                self.dataController.$currentWordIndex.sink{[self] newIndex in
-                    self.currentIndex = newIndex
-                    self.word = self.dataController.getWord()
-                }.store(in: &self.subscriptions)
+                self.dataController.$currentWord.sink{[self] word in
+                    self.word = word
+                    self.currentIndex = self.dataController.currentWordIndex
+                }
+                .store(in: &self.subscriptions)
                 
                 let refreshManager = RefreshManager.shared
                 refreshManager.loadDataIfNeeded() { itIsTomorrow in
