@@ -18,22 +18,23 @@ class DataController {
     var privateContext: NSManagedObjectContext
     @Published var currentWordIndex: Int {
         didSet {
-            UserDefaults.standard.setValue(self.currentWordIndex, forKey: "wordIndex")
+            let userDefaults = UserDefaults(suiteName: Self.Constants.appGroupId)!
+            userDefaults.set(self.currentWordIndex, forKey: Self.Constants.wordIndexKey)
         }
     }
     init(inMemory: Bool = false){
         // Read currentWordIndex from UserDefaults
-        let userDefaults = UserDefaults(suiteName: "group.matthedm.wod.chinese")!
-        let initialWordIndex = userDefaults.integer(forKey: "wordIndex")
+        let userDefaults = UserDefaults(suiteName: Self.Constants.appGroupId)!
+        let initialWordIndex = userDefaults.integer(forKey: Self.Constants.wordIndexKey)
         currentWordIndex = initialWordIndex
         
         // Initialize container
-        self.container = NSPersistentContainer(name: "WordOfTheDay")
+        self.container = NSPersistentContainer(name: Self.Constants.dbName)
             if inMemory {
 //                storeDescription.type = NSInMemoryStoreType // Comment out if not testing
                 container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
             } else {
-                let storeURL = URL.storeURL(for: "group.matthedm.wod.chinese", databaseName: "WordOfTheDay")
+                let storeURL = URL.storeURL(for: Self.Constants.appGroupId, databaseName:  Self.Constants.dbName)
                 container.persistentStoreDescriptions.first!.url = storeURL
             }
         self.container.loadPersistentStores(completionHandler: {(storeDescription, error) in
@@ -66,7 +67,8 @@ class DataController {
     }
 }
 extension DataController {
-    private func getWord(at index: Int) -> MyWord{
+    func getWord() -> MyWord{
+        print(self.currentWordIndex)
         print("ftch")
         let request = NSFetchRequest<MyWord>(entityName: "MyWord")
         request.fetchLimit = 1
@@ -74,9 +76,6 @@ extension DataController {
         let sortDescriptor = NSSortDescriptor(keyPath: \MyWord.percentageInFilms, ascending: false)
         request.sortDescriptors = [sortDescriptor]
         return try! self.managedObjectContext.fetch(request)[0]
-    }
-    func getWord() -> MyWord {
-        return getWord(at: currentWordIndex)
     }
     func nextWord() -> Void {
         self.currentWordIndex = (self.currentWordIndex + 1) % self.wordCount()
@@ -144,6 +143,9 @@ extension DataController{
     struct Constants {
         static let csvName = "pos_and_frequency"
         static let indexBuffer = 100
+        static let wordIndexKey = "wordIndex"
+        static let appGroupId = "group.matthedm.wod.chinese"
+        static let dbName = "WordOfTheDay"
     }
 }
 

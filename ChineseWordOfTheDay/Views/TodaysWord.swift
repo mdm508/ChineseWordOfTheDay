@@ -16,6 +16,7 @@ struct TodaysWord {
     @EnvironmentObject var dataController: DataController
     @State var currentIndex: Int = 0 {
         didSet {
+            print("here")
             WidgetCenter.shared.reloadAllTimelines()
         }
     }
@@ -42,7 +43,7 @@ extension TodaysWord: View {
         }
             .onAppear{
                 // set up subscription to changes in index
-                self.dataController.$currentWordIndex.sink{[self]newIndex in
+                self.dataController.$currentWordIndex.sink{[self] newIndex in
                     self.currentIndex = newIndex
                     self.word = self.dataController.getWord()
                 }.store(in: &self.subscriptions)
