@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "8BAEBDEF-BD0C-462F-A9B9-005164078F8F"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "92EE5F4A-E517-4D22-B238-7F7B48F4EE17"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChineseWordOfTheDay/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "ContentView_Previews"
+            landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "67855385-FF85-4B2F-AC0B-604422CCAF54"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RefreshManagerUnitTests/RefreshManagerUnitTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "test_whenStoredDateIsMoreThanOneDayAwayFromCurrentDate_doesRefresh()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CC563BBA-E096-4C13-828F-33BDC66C80A0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChineseWordOfTheDay/Views/HomeView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "CC563BBA-E096-4C13-828F-33BDC66C80A0 - 312ba7dd790e078b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in ChineseWordOfTheDay.HomeView.body.getter : some"
+                  moduleName = "ChineseWordOfTheDay"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/m/Developer/ChineseWordOfTheDay/ChineseWordOfTheDay/Views/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "139">
+               </Location>
+               <Location
+                  uuid = "CC563BBA-E096-4C13-828F-33BDC66C80A0 - b07e793170a7c395"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool) -&gt; () in closure #2 () -&gt; () in ChineseWordOfTheDay.HomeView.body.getter : some"
+                  moduleName = "ChineseWordOfTheDay"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/m/Developer/ChineseWordOfTheDay/ChineseWordOfTheDay/Views/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "100">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D310E8AD-E3DD-47C2-934F-1B418BC1B97F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DataControllerTests/DataControllerTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "testExample()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "912549FF-27E6-4433-9640-D79175706E84"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WordOfDayWidget/wordOfDayWidget.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "getSnapshot(in:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4292BF29-5800-4593-8CB8-C2A041277861"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WordOfDayWidget/wordOfDayWidget.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "getSnapshot(in:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4FE04240-5C4F-441C-ADEA-3564BCC2317F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChineseWordOfTheDay/Model/RefreshManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "isRefreshRequired()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4FE04240-5C4F-441C-ADEA-3564BCC2317F - 963ed2fd7ed27016"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ChineseWordOfTheDay.RefreshManager.isRefreshRequired() -&gt; Swift.Bool"
+                  moduleName = "ChineseWordOfTheDay"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/m/Developer/ChineseWordOfTheDay/ChineseWordOfTheDay/Model/RefreshManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "470">
+               </Location>
+               <Location
+                  uuid = "4FE04240-5C4F-441C-ADEA-3564BCC2317F - ecb28fa7aab16e92"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RefreshManagerUnitTests.RefreshManager.isRefreshRequired() -&gt; Swift.Bool"
+                  moduleName = "RefreshManagerUnitTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/m/Developer/ChineseWordOfTheDay/ChineseWordOfTheDay/Model/RefreshManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "470">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7F6C764E-0C76-43D7-939B-2D78827D77A7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChineseWordOfTheDay/Model/RefreshManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "isRefreshRequired()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7F6C764E-0C76-43D7-939B-2D78827D77A7 - 963ed2fd7ed27037"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ChineseWordOfTheDay.RefreshManager.isRefreshRequired() -&gt; Swift.Bool"
+                  moduleName = "ChineseWordOfTheDay"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/m/Developer/ChineseWordOfTheDay/ChineseWordOfTheDay/Model/RefreshManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "864">
+               </Location>
+               <Location
+                  uuid = "7F6C764E-0C76-43D7-939B-2D78827D77A7 - ecb28fa7aab16eb3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RefreshManagerUnitTests.RefreshManager.isRefreshRequired() -&gt; Swift.Bool"
+                  moduleName = "RefreshManagerUnitTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/m/Developer/ChineseWordOfTheDay/ChineseWordOfTheDay/Model/RefreshManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "864">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AD301BAD-1FBA-49C2-9329-2106310DB98E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChineseWordOfTheDay/Model/DataController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "nextWord()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B8CEC5D5-E412-44C5-BBC4-F4A060DA1A39"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChineseWordOfTheDay/Views/TodaysWord.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
