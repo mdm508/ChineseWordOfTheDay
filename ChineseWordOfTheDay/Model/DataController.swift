@@ -8,73 +8,61 @@
 import CoreData
 import Foundation
 import SwiftCSV
-
+import WidgetKit
 
 class DataController {
     let container: NSPersistentContainer
-    lazy var managedObjectContext: NSManagedObjectContext = {
+    private lazy var managedObjectContext: NSManagedObjectContext = {
         return self.container.viewContext
     }()
-    var privateContext: NSManagedObjectContext
+    private lazy var privateContext: NSManagedObjectContext = {
+        let childContext = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)
+        childContext.parent = self.managedObjectContext
+        return childContext
+    }()
+    static private let defaults = UserDefaults.init(suiteName: Constants.appGroupId)!
     private(set) var currentWordIndex: Int {
         didSet {
-            let userDefaults = UserDefaults(suiteName: Self.Constants.appGroupId)!
-            userDefaults.set(self.currentWordIndex, forKey: Self.Constants.wordIndexKey)
+            Self.writeIndexToUserDefaults(i: self.currentWordIndex)
             self.currentWord = self.getWord()
+            WidgetCenter.shared.reloadAllTimelines()
         }
     }
     @Published var currentWord: MyWord!
     init(inMemory: Bool = false){
         // Read currentWordIndex from UserDefaults
-        let userDefaults = UserDefaults(suiteName: Self.Constants.appGroupId)!
-        let initialWordIndex = userDefaults.integer(forKey: Self.Constants.wordIndexKey)
-        self.currentWordIndex = initialWordIndex
+        self.currentWordIndex = Self.defaults.integer(forKey: Self.Constants.wordIndexKey)
         // Initialize container
         self.container = NSPersistentContainer(name: Self.Constants.dbName)
-            if inMemory {
-//                storeDescription.type = NSInMemoryStoreType // Comment out if not testing
-                container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
-            } else {
-                let storeURL = URL.storeURL(for: Self.Constants.appGroupId, databaseName:  Self.Constants.dbName)
-                container.persistentStoreDescriptions.first!.url = storeURL
-            }
+        if inMemory {
+            container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
+        } else {
+            let storeURL = URL.storeURL(for: Self.Constants.appGroupId, databaseName:  Self.Constants.dbName)
+            container.persistentStoreDescriptions.first!.url = storeURL
+        }
         self.container.loadPersistentStores(completionHandler: {(storeDescription, error) in
             if let error = error as NSError? {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                
-                /*
-                 Typical reasons for an error here include:
-                 * The parent directory does not exist, cannot be created, or disallows writing.
-                 * The persistent store is not accessible, due to permissions or data protection when the device is locked.
-                 * The device is out of space.
-                 * The store could not be migrated to the current model version.
-                 Check the error message to determine what the actual problem was.
-                 */
                 fatalError("Unresolved error \(error), \(error.userInfo)")
             }
         })
-        
-            self.privateContext = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)
-            self.privateContext.parent = self.container.viewContext
         if !self.storeIsPopulated() {
-                print("populating store")
-                self.loadWordsFromCsvIntoDB()
-                print("done")
-            } else {
-                print("store is full already")
-            }
-        self.currentWord = self.getWord() // needed because didSet isn't called when initialiving properties
-
+            print("populating store")
+            self.loadWordsFromCsvIntoDB()
+            print("done")
+        } else {
+            print("loaded store from memory")
+            self.currentWord = self.getWord()
+        }
     }
 }
 extension DataController {
     func getWord() -> MyWord{
-        print(self.currentWordIndex)
-        print("ftch")
-        let request = NSFetchRequest<MyWord>(entityName: "MyWord")
+        return self.getWord(offset: self.currentWordIndex)
+    }
+    func getWord(offset: Int) -> MyWord{
+        let request = NSFetchRequest<MyWord>(entityName: Self.Constants.EntityName.Word)
         request.fetchLimit = 1
-        request.fetchOffset = self.currentWordIndex
+        request.fetchOffset = offset
         let sortDescriptor = NSSortDescriptor(keyPath: \MyWord.percentageInFilms, ascending: false)
         request.sortDescriptors = [sortDescriptor]
         return try! self.managedObjectContext.fetch(request)[0]
@@ -86,44 +74,50 @@ extension DataController {
         self.currentWordIndex = max(0, self.currentWordIndex - 1)
     }
     func wordCount() -> Int {
-        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "MyWord")
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: Self.Constants.EntityName.Word)
         return try! self.managedObjectContext.count(for: request)
     }
 }
 extension DataController: ObservableObject {
     private func storeIsPopulated() -> Bool {
-        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "MyWord")
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: Self.Constants.EntityName.Word)
         let count = try! self.managedObjectContext.count(for: request)
         return count > 0
         
     }
-    func loadWordsFromCsvIntoDB() {
+    static private func writeIndexToUserDefaults(i: Int){
+        Self.defaults.set(i, forKey: Self.Constants.wordIndexKey)
+    }
+    private func loadWordsFromCsvIntoDB() {
         guard let csvBundleURL = Bundle.main.url(forResource: Self.Constants.csvName, withExtension: "csv") else {
             print("Unable to locate csv in bundle")
             return
         }
         let csv = try! CSV<Named>(url: csvBundleURL, delimiter: ",", loadColumns: false)
-        // Load and save the some objects synchronously
-        // This is needed because its possible that user user default value of currentWordIndex a number biger than 0
-        // In most cases currentWordIndex will be small enough that user can experience benefit of a fast load.
-        let viewContext = self.container.viewContext
-        loadWords(from: csv, context: viewContext, startIndex: 0, endIndex: min(self.amountToLoadSynchronously, csv.rows.count))
-        print("done with main sync loads")
-        // Load and save the remaining objects asynchronously on a background thread
         privateContext.perform { [unowned self] in
-            loadWords(from: csv, context: self.privateContext, startIndex: self.amountToLoadSynchronously, endIndex: csv.rows.count)
-            try! self.privateContext.save()
-                viewContext.performAndWait {
-                    print("Saving to main contex")
-                    try! viewContext.save()
-                    print("done with all")
+            loadWords(from: csv, context: self.privateContext)
+            if self.privateContext.hasChanges {
+                do {
+                    try  self.privateContext.save()
                 }
-            
-            
+                catch {
+                    print("error saving child context")
+                }
+            }
+            self.managedObjectContext.performAndWait {
+                do {
+                    try self.managedObjectContext.save()
+                    self.currentWord = self.getWord()
+                } catch {
+                    print("problem writting changes to parent context")
+                }
+                
+            }
         }
     }
-    func loadWords(from csv: CSV<Named>, context: NSManagedObjectContext, startIndex: Int, endIndex: Int) {
-        for i in startIndex..<endIndex {
+    ///: Loads words into context from csv but does not save them
+    private func loadWords(from csv: CSV<Named>, context: NSManagedObjectContext) {
+        for i in 0..<csv.rows.count {
             let row = csv.rows[i]
             let word = MyWord(context: context)
             word.traditional = row["Traditional"]
@@ -134,23 +128,24 @@ extension DataController: ObservableObject {
             word.allPos = row["All.PoS"]
             word.domPos = row["Dominant.PoS"]
         }
-        print("saving")
-        try! context.save()
+    }
+    private func resetStore(){
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: Self.Constants.EntityName.Word)
+        let deleteRequest = NSBatchDeleteRequest(fetchRequest: request)
+        do {
+            try self.managedObjectContext.execute(deleteRequest)
+            Self.writeIndexToUserDefaults(i: 0)
+        } catch let error as NSError {
+            print("Problem resseting store")
+            print(error)
+        }
+    }
+    private func printRows(n: Int){
+        for i in 0...n{
+            print(self.getWord(offset: i).traditional!)
+        }
     }
 }
-extension DataController{
-    private var amountToLoadSynchronously: Int{
-        self.currentWordIndex + DataController.Constants.indexBuffer
-    }
-    struct Constants {
-        static let csvName = "pos_and_frequency"
-        static let indexBuffer = 100
-        static let wordIndexKey = "wordIndex"
-        static let appGroupId = "group.matthedm.wod.chinese"
-        static let dbName = "WordOfTheDay"
-    }
-}
-
 public extension URL {
     /// Returns a URL for the given app group and database pointing to the sqlite database.
     static func storeURL(for appGroup: String, databaseName: String) -> URL {
@@ -160,8 +155,22 @@ public extension URL {
         return fileContainer.appendingPathComponent("\(databaseName).sqlite")
     }
 }
-
-
+extension DataController{
+    private var amountToLoadSynchronously: Int{
+        self.currentWordIndex + DataController.Constants.indexBuffer
+    }
+    struct Constants {
+        static let defaults = UserDefaults.init(suiteName: appGroupId)!
+        static let csvName = "pos_and_frequency"
+        static let indexBuffer = 100
+        static let wordIndexKey = "wordIndex"
+        static let appGroupId = "group.matthedm.wod.chinese"
+        static let dbName = "WordOfTheDay"
+        struct EntityName {
+            static let Word = String(describing: MyWord.self)
+        }
+    }
+}
 /* Csv fied names
  "Traditional",
  "Simplified",
