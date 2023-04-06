@@ -41,12 +41,8 @@ extension TodaysWord: View {
             self.dataController.$currentWord.sink{[self] word in
                 self.word = word
                 self.currentIndex = self.dataController.currentWordIndex
-                // do reload here as it signifies current word has changed
-                WidgetCenter.shared.reloadAllTimelines()
-
             }
             .store(in: &self.subscriptions)
-            
             let refreshManager = RefreshManager.shared
             refreshManager.loadDataIfNeeded() { itIsTomorrow in
                 if itIsTomorrow {

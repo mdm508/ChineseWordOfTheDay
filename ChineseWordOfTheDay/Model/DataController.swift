@@ -21,16 +21,24 @@ class DataController {
         return childContext
     }()
     static private let defaults = UserDefaults.init(suiteName: Constants.appGroupId)!
-    private(set) var currentWordIndex: Int {
-        didSet {
-            Self.writeIndexToUserDefaults(i: self.currentWordIndex)
-            self.currentWord = self.getWord()
+    /// User defaults is the single source of truth for the index. This matters because widget uses getWord to determine
+    /// which word to display and getWord uses currentWordIndex. Since widget is using separate instance of the data controller
+    /// the only way it will see changes is if it reads the index from user defaults.
+     var currentWordIndex: Int {
+        get {
+            Self.readIndexFromUserDefaults()
         }
+         set {
+             Self.writeIndexToUserDefaults(i: newValue)
+             self.currentWord = self.getWord()
+             // do reload here as it signifies current word has changed
+             WidgetCenter.shared.reloadAllTimelines()
+         }
+        
     }
     @Published var currentWord: MyWord!
     init(inMemory: Bool = false){
         // Read currentWordIndex from UserDefaults
-        self.currentWordIndex = Self.defaults.integer(forKey: Self.Constants.wordIndexKey)
         // Initialize container
         self.container = NSPersistentContainer(name: Self.Constants.dbName)
         if inMemory {
@@ -83,9 +91,6 @@ extension DataController: ObservableObject {
         let count = try! self.managedObjectContext.count(for: request)
         return count > 0
         
-    }
-    static private func writeIndexToUserDefaults(i: Int){
-        Self.defaults.set(i, forKey: Self.Constants.wordIndexKey)
     }
     private func loadWordsFromCsvIntoDB() {
         guard let csvBundleURL = Bundle.main.url(forResource: Self.Constants.csvName, withExtension: "csv") else {
@@ -143,6 +148,14 @@ extension DataController: ObservableObject {
         for i in 0...n{
             print(self.getWord(offset: i).traditional!)
         }
+    }
+}
+extension DataController {
+    static private func writeIndexToUserDefaults(i: Int){
+        Self.defaults.set(i, forKey: Self.Constants.wordIndexKey)
+    }
+    static private func readIndexFromUserDefaults() -> Int {
+        return Self.defaults.integer(forKey: Self.Constants.wordIndexKey)
     }
 }
 public extension URL {

@@ -16,18 +16,16 @@ struct Provider: TimelineProvider{
         WidgetContent(date: Date(), currentWord: "企鵝", pinyin: "Qi4e2")
     }
     func getSnapshot(in context: Context, completion: @escaping (WidgetContent) -> ()) {
-        let word = dataController.currentWord
-        print(word)
-        let widgetContent = WidgetContent(date: Date(), currentWord: word?.traditional ?? "",
-                                          pinyin: word?.pinyin ?? "")
+        let word = dataController.getWord()
+        let widgetContent = WidgetContent(date: Date(), currentWord: word.traditional ?? "",
+                                          pinyin: word.pinyin ?? "")
         completion(widgetContent)
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
-        let word = dataController.currentWord
-        print(word)
-        let widgetContent = WidgetContent(date: Date(), currentWord: word?.traditional ?? "",
-                                          pinyin: word?.pinyin ?? "")
+        let word = dataController.getWord()
+        let widgetContent = WidgetContent(date: Date(), currentWord: word.traditional ?? "",
+                                          pinyin: word.pinyin ?? "")
         let timeline = Timeline(entries: [widgetContent], policy: .atEnd)
         completion(timeline)
     }
