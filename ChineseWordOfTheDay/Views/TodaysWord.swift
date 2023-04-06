@@ -29,8 +29,22 @@ extension TodaysWord: View {
                 Spacer()
                 Text(String(self.dataController.currentWordIndex))
                 HStack{
+                    Button("<<", action: {
+                        for _ in 1...20{
+                            if self.currentIndex >= 0{
+                                self.dataController.previousWord()
+                            }
+                        }
+                    }
+                    ).disabled(self.currentIndex == 0)
                     Button("prev",action: {self.dataController.previousWord()}).disabled(self.currentIndex == 0)
                     Button("next", action: {self.dataController.nextWord()})
+                    Button(">>", action: {
+                        for _ in 1...20{
+                            self.dataController.nextWord()
+                        }
+                    })
+
                 }
             } else {
                 Text("Initializing database")
