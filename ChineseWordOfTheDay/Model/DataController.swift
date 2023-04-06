@@ -25,7 +25,6 @@ class DataController {
         didSet {
             Self.writeIndexToUserDefaults(i: self.currentWordIndex)
             self.currentWord = self.getWord()
-            WidgetCenter.shared.reloadAllTimelines()
         }
     }
     @Published var currentWord: MyWord!
@@ -156,13 +155,9 @@ public extension URL {
     }
 }
 extension DataController{
-    private var amountToLoadSynchronously: Int{
-        self.currentWordIndex + DataController.Constants.indexBuffer
-    }
     struct Constants {
         static let defaults = UserDefaults.init(suiteName: appGroupId)!
         static let csvName = "pos_and_frequency"
-        static let indexBuffer = 100
         static let wordIndexKey = "wordIndex"
         static let appGroupId = "group.matthedm.wod.chinese"
         static let dbName = "WordOfTheDay"

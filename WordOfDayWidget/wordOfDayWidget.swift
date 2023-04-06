@@ -15,19 +15,19 @@ struct Provider: TimelineProvider{
     func placeholder(in context: Context) -> WidgetContent {
         WidgetContent(date: Date(), currentWord: "企鵝", pinyin: "Qi4e2")
     }
-    @AppStorage("wordIndex", store: UserDefaults(suiteName: "group.matthedm.wod.chinese")) var currentWordIndex: Int = 0
     func getSnapshot(in context: Context, completion: @escaping (WidgetContent) -> ()) {
-        let dataController = DataController()
-        let word = dataController.getWord()
-        let widgetContent = WidgetContent(date: Date(), currentWord: word.traditional ?? "",
-                                          pinyin: word.pinyin ?? "")
+        let word = dataController.currentWord
+        print(word)
+        let widgetContent = WidgetContent(date: Date(), currentWord: word?.traditional ?? "",
+                                          pinyin: word?.pinyin ?? "")
         completion(widgetContent)
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
-        let word = dataController.getWord()
-        let widgetContent = WidgetContent(date: Date(), currentWord: word.traditional ?? "",
-                                          pinyin: word.pinyin ?? "")
+        let word = dataController.currentWord
+        print(word)
+        let widgetContent = WidgetContent(date: Date(), currentWord: word?.traditional ?? "",
+                                          pinyin: word?.pinyin ?? "")
         let timeline = Timeline(entries: [widgetContent], policy: .atEnd)
         completion(timeline)
     }
