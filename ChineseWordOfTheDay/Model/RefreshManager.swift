@@ -14,6 +14,12 @@ class RefreshManager: NSObject {
     private let calender = Calendar.current
     init(defaults: UserDefaults=UserDefaults.standard){
         self.defaults = defaults
+        //used in case defaults has never been set before
+        //avoids refresh before apps ready
+        if defaults.object(forKey: defaultsKey) == nil {
+            defaults.set(Date(), forKey: defaultsKey)
+
+        }
     }
 }
 extension RefreshManager{
