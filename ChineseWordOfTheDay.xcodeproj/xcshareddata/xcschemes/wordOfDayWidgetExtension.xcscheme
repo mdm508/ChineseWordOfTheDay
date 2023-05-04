@@ -43,6 +43,28 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "16D547E52A017A0B007068D4"
+               BuildableName = "SpeechViewModel.xctest"
+               BlueprintName = "SpeechViewModel"
+               ReferencedContainer = "container:ChineseWordOfTheDay.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "167828A82A01801F0088F1CA"
+               BuildableName = "SpeechViewModelDayTests.xctest"
+               BlueprintName = "SpeechViewModelDayTests"
+               ReferencedContainer = "container:ChineseWordOfTheDay.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

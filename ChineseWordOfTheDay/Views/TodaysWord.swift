@@ -9,7 +9,7 @@ import SwiftUI
 import Combine
 import WidgetKit
 import CoreData
-
+import AVFoundation
 
 struct TodaysWord {
     @Environment(\.managedObjectContext) private var viewContext
@@ -24,8 +24,18 @@ extension TodaysWord: View {
         VStack{
             if let word = self.word {
                 WordView(word.traditional ?? "")
-                Text(word.pinyin ?? "")
-                Text(word.english ?? "")
+                HStack{
+                    Text(word.pinyin ?? "")
+                    if let trad = word.traditional {
+                        PlayButton(textToSpeak: trad, lang: LanguageCode.chineseTaiwan )
+                    }
+                }
+                HStack{
+                    Text(word.english ?? "")
+                    if let english = word.english {
+                        PlayButton(textToSpeak: english, lang: LanguageCode.english)
+                    }
+                }
                 Spacer()
                 Text(String(self.dataController.currentWordIndex))
                 HStack{

@@ -38,6 +38,10 @@
 		0CD75FFE29B02D840078853D /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CADBC6D299C324F00A805DD /* DataController.swift */; };
 		0CD75FFF29B02DC40078853D /* WordOfTheDay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0CADBC6F299C35AE00A805DD /* WordOfTheDay.xcdatamodeld */; };
 		0CD7600129B02F2D0078853D /* SwiftCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 0CD7600029B02F2D0078853D /* SwiftCSV */; };
+		167828AC2A01801F0088F1CA /* SpeechViewModelDayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167828AB2A01801F0088F1CA /* SpeechViewModelDayTests.swift */; };
+		167828B32A0182610088F1CA /* SpeechViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D547F12A017B45007068D4 /* SpeechViewModel.swift */; };
+		167828B52A041E270088F1CA /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167828B42A041E270088F1CA /* PlayButton.swift */; };
+		16D547F22A017B45007068D4 /* SpeechViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D547F12A017B45007068D4 /* SpeechViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,13 @@
 			remoteInfo = wordOfDayWidgetExtension;
 		};
 		0CB5FE0E294D3C0300DED7D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C88C0502932EA0E00E17C26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C88C0572932EA0E00E17C26;
+			remoteInfo = ChineseWordOfTheDay;
+		};
+		167828AD2A01801F0088F1CA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0C88C0502932EA0E00E17C26 /* Project object */;
 			proxyType = 1;
@@ -96,7 +107,11 @@
 		0CB5FE0A294D3C0200DED7D8 /* RefreshManagerUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RefreshManagerUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CB5FE0C294D3C0300DED7D8 /* RefreshManagerUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshManagerUnitTests.swift; sourceTree = "<group>"; };
 		0CD75FFB29A7E84D0078853D /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppIcon.appiconset; sourceTree = "<group>"; };
+		167828A92A01801F0088F1CA /* SpeechViewModelDayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeechViewModelDayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		167828AB2A01801F0088F1CA /* SpeechViewModelDayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechViewModelDayTests.swift; sourceTree = "<group>"; };
+		167828B42A041E270088F1CA /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
 		1680549229D6438300425FD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		16D547F12A017B45007068D4 /* SpeechViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +136,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0CB5FE07294D3C0200DED7D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		167828A62A01801F0088F1CA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -161,6 +183,8 @@
 			children = (
 				0CADBC6F299C35AE00A805DD /* WordOfTheDay.xcdatamodeld */,
 				0CB5FDF82947DF0900DED7D8 /* RefreshManager.swift */,
+				16D547F12A017B45007068D4 /* SpeechViewModel.swift */,
+				167828B42A041E270088F1CA /* PlayButton.swift */,
 				0CADBC6D299C324F00A805DD /* DataController.swift */,
 			);
 			path = Model;
@@ -175,6 +199,7 @@
 				0C88C05A2932EA0E00E17C26 /* ChineseWordOfTheDay */,
 				0CB207D9293AD56D0066AC21 /* WordOfDayWidget */,
 				0CB5FE0B294D3C0300DED7D8 /* RefreshManagerUnitTests */,
+				167828AA2A01801F0088F1CA /* SpeechViewModelDayTests */,
 				0CB207D4293AD56D0066AC21 /* Frameworks */,
 				0C88C0592932EA0E00E17C26 /* Products */,
 			);
@@ -186,6 +211,7 @@
 				0C88C0582932EA0E00E17C26 /* ChineseWordOfTheDay.app */,
 				0CB207D3293AD56D0066AC21 /* wordOfDayWidgetExtension.appex */,
 				0CB5FE0A294D3C0200DED7D8 /* RefreshManagerUnitTests.xctest */,
+				167828A92A01801F0088F1CA /* SpeechViewModelDayTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -247,6 +273,14 @@
 				0C0D19E729440FCD007CD72D /* ProjectFonts */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		167828AA2A01801F0088F1CA /* SpeechViewModelDayTests */ = {
+			isa = PBXGroup;
+			children = (
+				167828AB2A01801F0088F1CA /* SpeechViewModelDayTests.swift */,
+			);
+			path = SpeechViewModelDayTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,6 +348,24 @@
 			productReference = 0CB5FE0A294D3C0200DED7D8 /* RefreshManagerUnitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		167828A82A01801F0088F1CA /* SpeechViewModelDayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 167828AF2A01801F0088F1CA /* Build configuration list for PBXNativeTarget "SpeechViewModelDayTests" */;
+			buildPhases = (
+				167828A52A01801F0088F1CA /* Sources */,
+				167828A62A01801F0088F1CA /* Frameworks */,
+				167828A72A01801F0088F1CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				167828AE2A01801F0088F1CA /* PBXTargetDependency */,
+			);
+			name = SpeechViewModelDayTests;
+			productName = SpeechViewModelDayTests;
+			productReference = 167828A92A01801F0088F1CA /* SpeechViewModelDayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -321,7 +373,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1400;
+				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					0C88C0572932EA0E00E17C26 = {
@@ -332,6 +384,10 @@
 					};
 					0CB5FE09294D3C0200DED7D8 = {
 						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 0C88C0572932EA0E00E17C26;
+					};
+					167828A82A01801F0088F1CA = {
+						CreatedOnToolsVersion = 14.2;
 						TestTargetID = 0C88C0572932EA0E00E17C26;
 					};
 				};
@@ -356,6 +412,7 @@
 				0C88C0572932EA0E00E17C26 /* ChineseWordOfTheDay */,
 				0CB207D2293AD56D0066AC21 /* wordOfDayWidgetExtension */,
 				0CB5FE09294D3C0200DED7D8 /* RefreshManagerUnitTests */,
+				167828A82A01801F0088F1CA /* SpeechViewModelDayTests */,
 			);
 		};
 /* End PBXProject section */
@@ -391,6 +448,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		167828A72A01801F0088F1CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -400,10 +464,12 @@
 			files = (
 				0C0D19F02944124D007CD72D /* WordView.swift in Sources */,
 				0CADBC6E299C324F00A805DD /* DataController.swift in Sources */,
+				167828B52A041E270088F1CA /* PlayButton.swift in Sources */,
 				0CB207E1293AD56E0066AC21 /* wordOfDayWidget.intentdefinition in Sources */,
 				0CADBC71299C35AE00A805DD /* WordOfTheDay.xcdatamodeld in Sources */,
 				0C1D655729342177000E667A /* ChineseWordOfTheDayApp.swift in Sources */,
 				0CADBC73299C365D00A805DD /* TodaysWord.swift in Sources */,
+				16D547F22A017B45007068D4 /* SpeechViewModel.swift in Sources */,
 				0CC0E78629B7B462005C3ED4 /* RefreshManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +496,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		167828A52A01801F0088F1CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				167828B32A0182610088F1CA /* SpeechViewModel.swift in Sources */,
+				167828AC2A01801F0088F1CA /* SpeechViewModelDayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -442,6 +517,11 @@
 			isa = PBXTargetDependency;
 			target = 0C88C0572932EA0E00E17C26 /* ChineseWordOfTheDay */;
 			targetProxy = 0CB5FE0E294D3C0300DED7D8 /* PBXContainerItemProxy */;
+		};
+		167828AE2A01801F0088F1CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C88C0572932EA0E00E17C26 /* ChineseWordOfTheDay */;
+			targetProxy = 167828AD2A01801F0088F1CA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -496,7 +576,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -550,7 +630,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -580,7 +660,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -614,7 +694,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -724,6 +804,44 @@
 			};
 			name = Release;
 		};
+		167828B02A01801F0088F1CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SU6X47WC59;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = matthedm.SpeechViewModelDayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChineseWordOfTheDay.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChineseWordOfTheDay";
+			};
+			name = Debug;
+		};
+		167828B12A01801F0088F1CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SU6X47WC59;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = matthedm.SpeechViewModelDayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChineseWordOfTheDay.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChineseWordOfTheDay";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -759,6 +877,15 @@
 			buildConfigurations = (
 				0CB5FE11294D3C0300DED7D8 /* Debug */,
 				0CB5FE12294D3C0300DED7D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		167828AF2A01801F0088F1CA /* Build configuration list for PBXNativeTarget "SpeechViewModelDayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				167828B02A01801F0088F1CA /* Debug */,
+				167828B12A01801F0088F1CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
