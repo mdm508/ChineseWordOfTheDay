@@ -17,6 +17,9 @@ struct TodaysWord {
     @State var currentIndex: Int = 0
     @State var subscriptions = Set<AnyCancellable>()
     @State var word: MyWord?
+    var gridItems: [GridItem] {
+           [            GridItem(.flexible()),            GridItem(.flexible())        ]
+       }
 }
 
 extension TodaysWord: View {
@@ -25,13 +28,17 @@ extension TodaysWord: View {
             if let word = self.word {
                 WordView(word.traditional ?? "")
                 HStack{
+                    Spacer()
                     Text(word.pinyin ?? "")
+                    Spacer()
                     if let trad = word.traditional {
                         PlayButton(textToSpeak: trad, lang: LanguageCode.chineseTaiwan )
                     }
                 }
                 HStack{
+                    Spacer()
                     Text(word.english ?? "")
+                    Spacer()
                     if let english = word.english {
                         PlayButton(textToSpeak: english, lang: LanguageCode.english)
                     }
@@ -61,6 +68,8 @@ extension TodaysWord: View {
             }
         }
         .onAppear{
+            print(AVSpeechSynthesisVoice.speechVoices())
+
             // set up subscription to changes in index
             self.dataController.$currentWord.sink{[self] word in
                 self.word = word
