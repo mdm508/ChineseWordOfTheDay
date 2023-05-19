@@ -1,0 +1,147 @@
+# Xcode
+#
+# Build products, caches, and other generated files
+build/
+DerivedData/
+*.moved-aside
+*.xccheckout
+*.xcworkspace
+*.xcuserstate
+
+# Xcode private settings (including breakpoints and IDE state)
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserdatad
+
+# Xcode per-user config
+*.xcconfig
+
+# Swift Package Manager
+#
+# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
+# Packages/
+# Package.pins
+# Package.resolved
+.build/
+
+# CocoaPods
+#
+# We recommend against adding the Pods directory to your .gitignore. However
+# you should judge for yourself, the pros and cons are mentioned at:
+# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
+# Pods/
+
+# Carthage
+#
+# Add this line if you want to avoid checking in source code from Carthage dependencies.
+# Carthage/Checkouts
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the 
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/#source-control
+
+# Documentation
+#
+# Whether generated docs should be put into source control
+# doc/
+
+# macOS
+#
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# IntelliJ
+#
+# User-specific stuff
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries
+
+# DataGrip
+.idea/datagrip/
+
+# GoLand
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries
+
+# RubyMine
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries
+
+# WebStorm
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries
+
+# PyCharm
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries
+
+# PhpStorm
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries
+
+# Android Studio
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries
+
+# VS Code
+.vscode/
+# Add this line if you are working with Flutter project
+# .dart_tool/
+.idea/
+
+# Xcode
+# Add this line if you want to avoid checking in Xcode-related files and settings
+# *.xcodeproj/
+# *.xcworkspace/
+# *.xcuserstate
+# project.xcworkspace/
+# xcuserdata/
+# *.pbxproj
+
+# fastlane
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to regenerate the 
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/#source-control
+# fastlane/report.xml
+# fastlane/Preview.html
+# fastlane/screenshots
+
+# CMake
+cmake-build-debug/
+cmake-build-release/
+CMakeLists.txt.user
+
+# Flutter/Dart/Pub
+**/doc/api
+
