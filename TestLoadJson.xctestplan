@@ -12,7 +12,13 @@
     "testTimeoutsEnabled" : true
   },
   "testTargets" : [
-
+    {
+      "target" : {
+        "containerPath" : "container:ChineseWordOfTheDay.xcodeproj",
+        "identifier" : "A4D947892A35220500617CF6",
+        "name" : "wordsTests"
+      }
+    }
   ],
   "version" : 1
 }

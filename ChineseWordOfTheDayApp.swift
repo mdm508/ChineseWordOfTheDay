@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct ChineseWordOfTheDayApp: App {
@@ -13,7 +14,7 @@ struct ChineseWordOfTheDayApp: App {
     private let dataController: DataController = DataController(inMemory: false)
     var body: some Scene {
         WindowGroup {
-            TestcView()
+            TestcView().modelContainer(wordContainer)
 
         }
     }

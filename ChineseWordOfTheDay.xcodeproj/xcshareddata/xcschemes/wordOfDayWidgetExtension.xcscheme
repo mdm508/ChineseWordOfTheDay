@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1400"
+   LastUpgradeVersion = "1500"
    wasCreatedForAppExtension = "YES"
    version = "2.0">
    <BuildAction
@@ -62,6 +62,17 @@
                BlueprintIdentifier = "167828A82A01801F0088F1CA"
                BuildableName = "SpeechViewModelDayTests.xctest"
                BlueprintName = "SpeechViewModelDayTests"
+               ReferencedContainer = "container:ChineseWordOfTheDay.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A4D947892A35220500617CF6"
+               BuildableName = "wordsTests.xctest"
+               BlueprintName = "wordsTests"
                ReferencedContainer = "container:ChineseWordOfTheDay.xcodeproj">
             </BuildableReference>
          </TestableReference>

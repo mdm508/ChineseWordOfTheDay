@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
-
+import SwiftData
 struct TestcView: View {
+    @Query(sort) private var words: [Word]
+    @Environment(\.modelContext) private var modelContext
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(words[0].traditional)
     }
 }
 
