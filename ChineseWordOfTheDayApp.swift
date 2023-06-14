@@ -14,7 +14,7 @@ struct ChineseWordOfTheDayApp: App {
     private let dataController: DataController = DataController(inMemory: false)
     var body: some Scene {
         WindowGroup {
-            TestcView().modelContainer(wordContainer)
+            TestcView().modelContainer(Containers.wordContainer)
 
         }
     }
