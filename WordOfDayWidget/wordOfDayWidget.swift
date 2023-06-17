@@ -43,7 +43,7 @@ struct wordOfDayWidgetEntryView : View {
 
     var body: some View {
         VStack{
-            WordView(entry.currentWord)
+//            WordView(entry.currentWord)
             Text(entry.pinyin)
         }
     }

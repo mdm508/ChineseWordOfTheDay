@@ -15,7 +15,7 @@ let fd = {
     return descriptior
 }()
 
-struct TestcView: View {
+struct TodaysWordView: View {
     @Query(sort: \.frequency, order: .reverse)
     private var words: [Word]
     @Environment(\.modelContext) private var modelContext
@@ -26,6 +26,9 @@ struct TestcView: View {
     }
 }
 
-#Preview {
-    TestcView()
+
+struct TodaysWordView_Previews: PreviewProvider {
+    static var previews: some View {
+        TodaysWordView().modelContainer(Containers.previewContainer)
+    }
 }
