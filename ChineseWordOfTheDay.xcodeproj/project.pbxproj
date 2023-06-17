@@ -8,38 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		0C0D19F329441627007CD72D /* kaiu.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0C0D19F229441471007CD72D /* kaiu.ttf */; };
-		0C0D19F429441628007CD72D /* kaiu.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0C0D19F229441471007CD72D /* kaiu.ttf */; };
 		0C1D655729342177000E667A /* ChineseWordOfTheDayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C88C05B2932EA0F00E17C26 /* ChineseWordOfTheDayApp.swift */; };
 		0C29EA67293C48BB00F2C0A7 /* FMDB in Frameworks */ = {isa = PBXBuildFile; productRef = 0C29EA66293C48BB00F2C0A7 /* FMDB */; };
-		0C29EA772942BD9200F2C0A7 /* FMDB in Frameworks */ = {isa = PBXBuildFile; productRef = 0C29EA762942BD9200F2C0A7 /* FMDB */; };
 		0C88C0602932EA1000E17C26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C88C05F2932EA1000E17C26 /* Assets.xcassets */; };
 		0C88C0632932EA1000E17C26 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C88C0622932EA1000E17C26 /* Preview Assets.xcassets */; };
 		0C9DB900299DB8D100E6D4F9 /* SwiftCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 0C9DB8FF299DB8D100E6D4F9 /* SwiftCSV */; };
 		0CA9DF9F2A393DD50002EB9E /* default.store in Resources */ = {isa = PBXBuildFile; fileRef = 0CA9DF9E2A393DD50002EB9E /* default.store */; };
 		0CAA71DB2A3D2507000FDA84 /* WordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAA71DA2A3D2507000FDA84 /* WordView.swift */; };
-		0CAA71DD2A3D2681000FDA84 /* WordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAA71DA2A3D2507000FDA84 /* WordView.swift */; };
 		0CAA71DF2A3D2836000FDA84 /* GeometryReaderCentered.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAA71DE2A3D2836000FDA84 /* GeometryReaderCentered.swift */; };
-		0CAA71E02A3D2836000FDA84 /* GeometryReaderCentered.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAA71DE2A3D2836000FDA84 /* GeometryReaderCentered.swift */; };
-		0CADBC6E299C324F00A805DD /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CADBC6D299C324F00A805DD /* DataController.swift */; };
 		0CADBC71299C35AE00A805DD /* WordOfTheDay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0CADBC6F299C35AE00A805DD /* WordOfTheDay.xcdatamodeld */; };
 		0CADBC75299C61F000A805DD /* pos_and_frequency.csv in Resources */ = {isa = PBXBuildFile; fileRef = 0CADBC74299C61F000A805DD /* pos_and_frequency.csv */; };
-		0CB207D6293AD56D0066AC21 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CB207D5293AD56D0066AC21 /* WidgetKit.framework */; };
-		0CB207D8293AD56D0066AC21 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CB207D7293AD56D0066AC21 /* SwiftUI.framework */; };
-		0CB207DB293AD56D0066AC21 /* wordOfDayWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB207DA293AD56D0066AC21 /* wordOfDayWidget.swift */; };
-		0CB207DE293AD56E0066AC21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CB207DD293AD56E0066AC21 /* Assets.xcassets */; };
-		0CB207E0293AD56E0066AC21 /* wordOfDayWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 0CB207DC293AD56D0066AC21 /* wordOfDayWidget.intentdefinition */; };
-		0CB207E1293AD56E0066AC21 /* wordOfDayWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 0CB207DC293AD56D0066AC21 /* wordOfDayWidget.intentdefinition */; };
-		0CB207E5293AD56E0066AC21 /* wordOfDayWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0CB207D3293AD56D0066AC21 /* wordOfDayWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0CB5FE0D294D3C0300DED7D8 /* RefreshManagerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB5FE0C294D3C0300DED7D8 /* RefreshManagerUnitTests.swift */; };
 		0CB5FE13294D3C2000DED7D8 /* RefreshManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB5FDF82947DF0900DED7D8 /* RefreshManager.swift */; };
 		0CC0E78529B7B3B0005C3ED4 /* WordOfTheDay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0CADBC6F299C35AE00A805DD /* WordOfTheDay.xcdatamodeld */; };
 		0CC0E78629B7B462005C3ED4 /* RefreshManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB5FDF82947DF0900DED7D8 /* RefreshManager.swift */; };
-		0CC0E78729BA4409005C3ED4 /* pos_and_frequency.csv in Resources */ = {isa = PBXBuildFile; fileRef = 0CADBC74299C61F000A805DD /* pos_and_frequency.csv */; };
 		0CD75FFC29A7E84D0078853D /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = 0CD75FFB29A7E84D0078853D /* AppIcon.appiconset */; };
-		0CD75FFD29A7E84D0078853D /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = 0CD75FFB29A7E84D0078853D /* AppIcon.appiconset */; };
-		0CD75FFE29B02D840078853D /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CADBC6D299C324F00A805DD /* DataController.swift */; };
-		0CD75FFF29B02DC40078853D /* WordOfTheDay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0CADBC6F299C35AE00A805DD /* WordOfTheDay.xcdatamodeld */; };
-		0CD7600129B02F2D0078853D /* SwiftCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 0CD7600029B02F2D0078853D /* SwiftCSV */; };
 		167828AC2A01801F0088F1CA /* SpeechViewModelDayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167828AB2A01801F0088F1CA /* SpeechViewModelDayTests.swift */; };
 		167828B32A0182610088F1CA /* SpeechViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D547F12A017B45007068D4 /* SpeechViewModel.swift */; };
 		167828B52A041E270088F1CA /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167828B42A041E270088F1CA /* PlayButton.swift */; };
@@ -47,29 +30,10 @@
 		A4716A452A356602003D9BC0 /* TodaysWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4716A442A356602003D9BC0 /* TodaysWordView.swift */; };
 		A4716A462A3567C2003D9BC0 /* output.json in Resources */ = {isa = PBXBuildFile; fileRef = A47AE2712A3542CF002585F6 /* output.json */; };
 		A4D947772A3520F200617CF6 /* Containers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D947762A3520F200617CF6 /* Containers.swift */; };
-		A4D947782A3520F200617CF6 /* Containers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D947762A3520F200617CF6 /* Containers.swift */; };
-		A4D947852A35220500617CF6 /* words.docc in Sources */ = {isa = PBXBuildFile; fileRef = A4D947842A35220500617CF6 /* words.docc */; };
-		A4D9478B2A35220500617CF6 /* words.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D947812A35220500617CF6 /* words.framework */; };
-		A4D947922A35220600617CF6 /* wordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D947912A35220600617CF6 /* wordsTests.swift */; };
-		A4D947932A35220600617CF6 /* words.h in Headers */ = {isa = PBXBuildFile; fileRef = A4D947832A35220500617CF6 /* words.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A4D947962A35220600617CF6 /* words.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D947812A35220500617CF6 /* words.framework */; };
-		A4D947972A35220600617CF6 /* words.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A4D947812A35220500617CF6 /* words.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A4D947A02A35221F00617CF6 /* load_words.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D9479F2A35221F00617CF6 /* load_words.swift */; };
-		A4D947AD2A352E4100617CF6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D947AC2A352E4100617CF6 /* main.swift */; };
-		A4D947B12A352E6C00617CF6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D947AC2A352E4100617CF6 /* main.swift */; };
 		A4D947B32A35304C00617CF6 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D947A22A35234500617CF6 /* Word.swift */; };
-		A4D947B42A35304D00617CF6 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D947A22A35234500617CF6 /* Word.swift */; };
-		A4D947B52A35309400617CF6 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D947A22A35234500617CF6 /* Word.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0CB207E2293AD56E0066AC21 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0C88C0502932EA0E00E17C26 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0CB207D2293AD56D0066AC21;
-			remoteInfo = wordOfDayWidgetExtension;
-		};
 		0CB5FE0E294D3C0300DED7D8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0C88C0502932EA0E00E17C26 /* Project object */;
@@ -84,27 +48,6 @@
 			remoteGlobalIDString = 0C88C0572932EA0E00E17C26;
 			remoteInfo = ChineseWordOfTheDay;
 		};
-		A4D9478C2A35220500617CF6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0C88C0502932EA0E00E17C26 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A4D947802A35220500617CF6;
-			remoteInfo = words;
-		};
-		A4D9478E2A35220600617CF6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0C88C0502932EA0E00E17C26 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0C88C0572932EA0E00E17C26;
-			remoteInfo = ChineseWordOfTheDay;
-		};
-		A4D947942A35220600617CF6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0C88C0502932EA0E00E17C26 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A4D947802A35220500617CF6;
-			remoteInfo = words;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -114,7 +57,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				0CB207E5293AD56E0066AC21 /* wordOfDayWidgetExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -125,19 +67,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A4D947972A35220600617CF6 /* words.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A4D947A82A352E4100617CF6 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -153,16 +85,10 @@
 		0CA9DF9E2A393DD50002EB9E /* default.store */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.store; sourceTree = "<group>"; };
 		0CAA71DA2A3D2507000FDA84 /* WordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordView.swift; sourceTree = "<group>"; };
 		0CAA71DE2A3D2836000FDA84 /* GeometryReaderCentered.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderCentered.swift; sourceTree = "<group>"; };
-		0CADBC6D299C324F00A805DD /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		0CADBC70299C35AE00A805DD /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		0CADBC74299C61F000A805DD /* pos_and_frequency.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pos_and_frequency.csv; sourceTree = "<group>"; };
-		0CB207D3293AD56D0066AC21 /* wordOfDayWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = wordOfDayWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CB207D5293AD56D0066AC21 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		0CB207D7293AD56D0066AC21 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		0CB207DA293AD56D0066AC21 /* wordOfDayWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wordOfDayWidget.swift; sourceTree = "<group>"; };
-		0CB207DC293AD56D0066AC21 /* wordOfDayWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = wordOfDayWidget.intentdefinition; sourceTree = "<group>"; };
-		0CB207DD293AD56E0066AC21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0CB207DF293AD56E0066AC21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CB5FDF82947DF0900DED7D8 /* RefreshManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshManager.swift; sourceTree = "<group>"; };
 		0CB5FE0A294D3C0200DED7D8 /* RefreshManagerUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RefreshManagerUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CB5FE0C294D3C0300DED7D8 /* RefreshManagerUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshManagerUnitTests.swift; sourceTree = "<group>"; };
@@ -175,16 +101,7 @@
 		A4716A442A356602003D9BC0 /* TodaysWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaysWordView.swift; sourceTree = "<group>"; };
 		A47AE2712A3542CF002585F6 /* output.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = output.json; sourceTree = "<group>"; };
 		A4D947762A3520F200617CF6 /* Containers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Containers.swift; sourceTree = "<group>"; };
-		A4D947812A35220500617CF6 /* words.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = words.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4D947832A35220500617CF6 /* words.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = words.h; sourceTree = "<group>"; };
-		A4D947842A35220500617CF6 /* words.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = words.docc; sourceTree = "<group>"; };
-		A4D9478A2A35220500617CF6 /* wordsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wordsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4D947912A35220600617CF6 /* wordsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wordsTests.swift; sourceTree = "<group>"; };
-		A4D9479F2A35221F00617CF6 /* load_words.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = load_words.swift; sourceTree = "<group>"; };
 		A4D947A22A35234500617CF6 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
-		A4D947AA2A352E4100617CF6 /* commandLine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = commandLine; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4D947AC2A352E4100617CF6 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		A4D947B22A352F9F00617CF6 /* TestLoadJson.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestLoadJson.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,20 +109,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4D947962A35220600617CF6 /* words.framework in Frameworks */,
 				0C29EA67293C48BB00F2C0A7 /* FMDB in Frameworks */,
 				0C9DB900299DB8D100E6D4F9 /* SwiftCSV in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0CB207D0293AD56D0066AC21 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0CB207D8293AD56D0066AC21 /* SwiftUI.framework in Frameworks */,
-				0CD7600129B02F2D0078853D /* SwiftCSV in Frameworks */,
-				0C29EA772942BD9200F2C0A7 /* FMDB in Frameworks */,
-				0CB207D6293AD56D0066AC21 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,28 +122,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		167828A62A01801F0088F1CA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A4D9477E2A35220500617CF6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A4D947872A35220500617CF6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A4D9478B2A35220500617CF6 /* words.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A4D947A72A352E4100617CF6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -278,7 +161,6 @@
 				0CB5FDF82947DF0900DED7D8 /* RefreshManager.swift */,
 				16D547F12A017B45007068D4 /* SpeechViewModel.swift */,
 				167828B42A041E270088F1CA /* PlayButton.swift */,
-				0CADBC6D299C324F00A805DD /* DataController.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -287,7 +169,6 @@
 			isa = PBXGroup;
 			children = (
 				0C88C05B2932EA0F00E17C26 /* ChineseWordOfTheDayApp.swift */,
-				A4D947B22A352F9F00617CF6 /* TestLoadJson.xctestplan */,
 				A4D947752A351FE000617CF6 /* Support */,
 				A4D947742A351FC300617CF6 /* Views */,
 				A4D947732A351FB900617CF6 /* Models */,
@@ -295,12 +176,8 @@
 				0CB795312953E432003CEE73 /* Resources */,
 				0C0D19EB2944106D007CD72D /* BridgingHeaders */,
 				0C88C05A2932EA0E00E17C26 /* ChineseWordOfTheDay */,
-				0CB207D9293AD56D0066AC21 /* WordOfDayWidget */,
 				0CB5FE0B294D3C0300DED7D8 /* RefreshManagerUnitTests */,
 				167828AA2A01801F0088F1CA /* SpeechViewModelDayTests */,
-				A4D947822A35220500617CF6 /* words */,
-				A4D947902A35220600617CF6 /* wordsTests */,
-				A4D947AB2A352E4100617CF6 /* commandLine */,
 				0CB207D4293AD56D0066AC21 /* Frameworks */,
 				0C88C0592932EA0E00E17C26 /* Products */,
 			);
@@ -310,12 +187,8 @@
 			isa = PBXGroup;
 			children = (
 				0C88C0582932EA0E00E17C26 /* ChineseWordOfTheDay.app */,
-				0CB207D3293AD56D0066AC21 /* wordOfDayWidgetExtension.appex */,
 				0CB5FE0A294D3C0200DED7D8 /* RefreshManagerUnitTests.xctest */,
 				167828A92A01801F0088F1CA /* SpeechViewModelDayTests.xctest */,
-				A4D947812A35220500617CF6 /* words.framework */,
-				A4D9478A2A35220500617CF6 /* wordsTests.xctest */,
-				A4D947AA2A352E4100617CF6 /* commandLine */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -357,17 +230,6 @@
 				0CB207D7293AD56D0066AC21 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		0CB207D9293AD56D0066AC21 /* WordOfDayWidget */ = {
-			isa = PBXGroup;
-			children = (
-				0CB207DA293AD56D0066AC21 /* wordOfDayWidget.swift */,
-				0CB207DC293AD56D0066AC21 /* wordOfDayWidget.intentdefinition */,
-				0CB207DD293AD56E0066AC21 /* Assets.xcassets */,
-				0CB207DF293AD56E0066AC21 /* Info.plist */,
-			);
-			path = WordOfDayWidget;
 			sourceTree = "<group>";
 		};
 		0CB5FE0B294D3C0300DED7D8 /* RefreshManagerUnitTests */ = {
@@ -423,44 +285,7 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
-		A4D947822A35220500617CF6 /* words */ = {
-			isa = PBXGroup;
-			children = (
-				A4D947832A35220500617CF6 /* words.h */,
-				A4D947842A35220500617CF6 /* words.docc */,
-				A4D9479F2A35221F00617CF6 /* load_words.swift */,
-			);
-			path = words;
-			sourceTree = "<group>";
-		};
-		A4D947902A35220600617CF6 /* wordsTests */ = {
-			isa = PBXGroup;
-			children = (
-				A4D947912A35220600617CF6 /* wordsTests.swift */,
-			);
-			path = wordsTests;
-			sourceTree = "<group>";
-		};
-		A4D947AB2A352E4100617CF6 /* commandLine */ = {
-			isa = PBXGroup;
-			children = (
-				A4D947AC2A352E4100617CF6 /* main.swift */,
-			);
-			path = commandLine;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		A4D9477C2A35220500617CF6 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A4D947932A35220600617CF6 /* words.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		0C88C0572932EA0E00E17C26 /* ChineseWordOfTheDay */ = {
@@ -476,8 +301,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				0CB207E3293AD56E0066AC21 /* PBXTargetDependency */,
-				A4D947952A35220600617CF6 /* PBXTargetDependency */,
 			);
 			name = ChineseWordOfTheDay;
 			packageProductDependencies = (
@@ -487,27 +310,6 @@
 			productName = ChineseWordOfTheDay;
 			productReference = 0C88C0582932EA0E00E17C26 /* ChineseWordOfTheDay.app */;
 			productType = "com.apple.product-type.application";
-		};
-		0CB207D2293AD56D0066AC21 /* wordOfDayWidgetExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0CB207E8293AD56E0066AC21 /* Build configuration list for PBXNativeTarget "wordOfDayWidgetExtension" */;
-			buildPhases = (
-				0CB207CF293AD56D0066AC21 /* Sources */,
-				0CB207D0293AD56D0066AC21 /* Frameworks */,
-				0CB207D1293AD56D0066AC21 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = wordOfDayWidgetExtension;
-			packageProductDependencies = (
-				0C29EA762942BD9200F2C0A7 /* FMDB */,
-				0CD7600029B02F2D0078853D /* SwiftCSV */,
-			);
-			productName = wordOfDayWidgetExtension;
-			productReference = 0CB207D3293AD56D0066AC21 /* wordOfDayWidgetExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
 		};
 		0CB5FE09294D3C0200DED7D8 /* RefreshManagerUnitTests */ = {
 			isa = PBXNativeTarget;
@@ -545,60 +347,6 @@
 			productReference = 167828A92A01801F0088F1CA /* SpeechViewModelDayTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A4D947802A35220500617CF6 /* words */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A4D947982A35220600617CF6 /* Build configuration list for PBXNativeTarget "words" */;
-			buildPhases = (
-				A4D9477C2A35220500617CF6 /* Headers */,
-				A4D9477D2A35220500617CF6 /* Sources */,
-				A4D9477E2A35220500617CF6 /* Frameworks */,
-				A4D9477F2A35220500617CF6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = words;
-			productName = words;
-			productReference = A4D947812A35220500617CF6 /* words.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		A4D947892A35220500617CF6 /* wordsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A4D9479C2A35220600617CF6 /* Build configuration list for PBXNativeTarget "wordsTests" */;
-			buildPhases = (
-				A4D947862A35220500617CF6 /* Sources */,
-				A4D947872A35220500617CF6 /* Frameworks */,
-				A4D947882A35220500617CF6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A4D9478D2A35220500617CF6 /* PBXTargetDependency */,
-				A4D9478F2A35220600617CF6 /* PBXTargetDependency */,
-			);
-			name = wordsTests;
-			productName = wordsTests;
-			productReference = A4D9478A2A35220500617CF6 /* wordsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		A4D947A92A352E4100617CF6 /* commandLine */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A4D947AE2A352E4100617CF6 /* Build configuration list for PBXNativeTarget "commandLine" */;
-			buildPhases = (
-				A4D947A62A352E4100617CF6 /* Sources */,
-				A4D947A72A352E4100617CF6 /* Frameworks */,
-				A4D947A82A352E4100617CF6 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = commandLine;
-			productName = commandLine;
-			productReference = A4D947AA2A352E4100617CF6 /* commandLine */;
-			productType = "com.apple.product-type.tool";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -612,9 +360,6 @@
 					0C88C0572932EA0E00E17C26 = {
 						CreatedOnToolsVersion = 14.0;
 					};
-					0CB207D2293AD56D0066AC21 = {
-						CreatedOnToolsVersion = 14.0;
-					};
 					0CB5FE09294D3C0200DED7D8 = {
 						CreatedOnToolsVersion = 14.0;
 						TestTargetID = 0C88C0572932EA0E00E17C26;
@@ -622,15 +367,6 @@
 					167828A82A01801F0088F1CA = {
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = 0C88C0572932EA0E00E17C26;
-					};
-					A4D947802A35220500617CF6 = {
-						CreatedOnToolsVersion = 15.0;
-					};
-					A4D947892A35220500617CF6 = {
-						CreatedOnToolsVersion = 15.0;
-					};
-					A4D947A92A352E4100617CF6 = {
-						CreatedOnToolsVersion = 15.0;
 					};
 				};
 			};
@@ -652,12 +388,8 @@
 			projectRoot = "";
 			targets = (
 				0C88C0572932EA0E00E17C26 /* ChineseWordOfTheDay */,
-				0CB207D2293AD56D0066AC21 /* wordOfDayWidgetExtension */,
 				0CB5FE09294D3C0200DED7D8 /* RefreshManagerUnitTests */,
 				167828A82A01801F0088F1CA /* SpeechViewModelDayTests */,
-				A4D947802A35220500617CF6 /* words */,
-				A4D947892A35220500617CF6 /* wordsTests */,
-				A4D947A92A352E4100617CF6 /* commandLine */,
 			);
 		};
 /* End PBXProject section */
@@ -677,17 +409,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0CB207D1293AD56D0066AC21 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0CC0E78729BA4409005C3ED4 /* pos_and_frequency.csv in Resources */,
-				0CD75FFD29A7E84D0078853D /* AppIcon.appiconset in Resources */,
-				0C0D19F429441628007CD72D /* kaiu.ttf in Resources */,
-				0CB207DE293AD56E0066AC21 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		0CB5FE08294D3C0200DED7D8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -696,20 +417,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		167828A72A01801F0088F1CA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A4D9477F2A35220500617CF6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A4D947882A35220500617CF6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -725,31 +432,14 @@
 			files = (
 				A4D947B32A35304C00617CF6 /* Word.swift in Sources */,
 				A4716A452A356602003D9BC0 /* TodaysWordView.swift in Sources */,
-				0CADBC6E299C324F00A805DD /* DataController.swift in Sources */,
 				167828B52A041E270088F1CA /* PlayButton.swift in Sources */,
 				0CAA71DF2A3D2836000FDA84 /* GeometryReaderCentered.swift in Sources */,
-				0CB207E1293AD56E0066AC21 /* wordOfDayWidget.intentdefinition in Sources */,
 				0CADBC71299C35AE00A805DD /* WordOfTheDay.xcdatamodeld in Sources */,
 				0C1D655729342177000E667A /* ChineseWordOfTheDayApp.swift in Sources */,
 				0CAA71DB2A3D2507000FDA84 /* WordView.swift in Sources */,
 				16D547F22A017B45007068D4 /* SpeechViewModel.swift in Sources */,
 				A4D947772A3520F200617CF6 /* Containers.swift in Sources */,
 				0CC0E78629B7B462005C3ED4 /* RefreshManager.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0CB207CF293AD56D0066AC21 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0CAA71E02A3D2836000FDA84 /* GeometryReaderCentered.swift in Sources */,
-				0CD75FFF29B02DC40078853D /* WordOfTheDay.xcdatamodeld in Sources */,
-				0CD75FFE29B02D840078853D /* DataController.swift in Sources */,
-				0CAA71DD2A3D2681000FDA84 /* WordView.swift in Sources */,
-				A4D947B42A35304D00617CF6 /* Word.swift in Sources */,
-				0CB207E0293AD56E0066AC21 /* wordOfDayWidget.intentdefinition in Sources */,
-				A4D947782A3520F200617CF6 /* Containers.swift in Sources */,
-				0CB207DB293AD56D0066AC21 /* wordOfDayWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -772,41 +462,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A4D9477D2A35220500617CF6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A4D947852A35220500617CF6 /* words.docc in Sources */,
-				A4D947B52A35309400617CF6 /* Word.swift in Sources */,
-				A4D947A02A35221F00617CF6 /* load_words.swift in Sources */,
-				A4D947B12A352E6C00617CF6 /* main.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A4D947862A35220500617CF6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A4D947922A35220600617CF6 /* wordsTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A4D947A62A352E4100617CF6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A4D947AD2A352E4100617CF6 /* main.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0CB207E3293AD56E0066AC21 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0CB207D2293AD56D0066AC21 /* wordOfDayWidgetExtension */;
-			targetProxy = 0CB207E2293AD56E0066AC21 /* PBXContainerItemProxy */;
-		};
 		0CB5FE0F294D3C0300DED7D8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0C88C0572932EA0E00E17C26 /* ChineseWordOfTheDay */;
@@ -816,21 +474,6 @@
 			isa = PBXTargetDependency;
 			target = 0C88C0572932EA0E00E17C26 /* ChineseWordOfTheDay */;
 			targetProxy = 167828AD2A01801F0088F1CA /* PBXContainerItemProxy */;
-		};
-		A4D9478D2A35220500617CF6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A4D947802A35220500617CF6 /* words */;
-			targetProxy = A4D9478C2A35220500617CF6 /* PBXContainerItemProxy */;
-		};
-		A4D9478F2A35220600617CF6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0C88C0572932EA0E00E17C26 /* ChineseWordOfTheDay */;
-			targetProxy = A4D9478E2A35220600617CF6 /* PBXContainerItemProxy */;
-		};
-		A4D947952A35220600617CF6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A4D947802A35220500617CF6 /* words */;
-			targetProxy = A4D947942A35220600617CF6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1017,64 +660,6 @@
 			};
 			name = Release;
 		};
-		0CB207E6293AD56E0066AC21 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = wordOfDayWidgetExtension.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SU6X47WC59;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = wordOfDayWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = wordOfDayWidget;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = matthedm.ChineseWordOfTheDay.wordOfDayWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		0CB207E7293AD56E0066AC21 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = wordOfDayWidgetExtension.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SU6X47WC59;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = wordOfDayWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = wordOfDayWidget;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = matthedm.ChineseWordOfTheDay.wordOfDayWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		0CB5FE11294D3C0300DED7D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1151,183 +736,6 @@
 			};
 			name = Release;
 		};
-		A4D947992A35220600617CF6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = YES;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = SU6X47WC59;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.4;
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = matthedm.words;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = auto;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A4D9479A2A35220600617CF6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = YES;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = SU6X47WC59;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.4;
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = matthedm.words;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = auto;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A4D9479D2A35220600617CF6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = matthedm.wordsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		A4D9479E2A35220600617CF6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = matthedm.wordsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		A4D947AF2A352E4100617CF6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEAD_CODE_STRIPPING = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.4;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		A4D947B02A352E4100617CF6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEAD_CODE_STRIPPING = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.4;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1349,15 +757,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0CB207E8293AD56E0066AC21 /* Build configuration list for PBXNativeTarget "wordOfDayWidgetExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0CB207E6293AD56E0066AC21 /* Debug */,
-				0CB207E7293AD56E0066AC21 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		0CB5FE10294D3C0300DED7D8 /* Build configuration list for PBXNativeTarget "RefreshManagerUnitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1372,33 +771,6 @@
 			buildConfigurations = (
 				167828B02A01801F0088F1CA /* Debug */,
 				167828B12A01801F0088F1CA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A4D947982A35220600617CF6 /* Build configuration list for PBXNativeTarget "words" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A4D947992A35220600617CF6 /* Debug */,
-				A4D9479A2A35220600617CF6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A4D9479C2A35220600617CF6 /* Build configuration list for PBXNativeTarget "wordsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A4D9479D2A35220600617CF6 /* Debug */,
-				A4D9479E2A35220600617CF6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A4D947AE2A352E4100617CF6 /* Build configuration list for PBXNativeTarget "commandLine" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A4D947AF2A352E4100617CF6 /* Debug */,
-				A4D947B02A352E4100617CF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1430,17 +802,7 @@
 			package = 0C29EA65293C48BB00F2C0A7 /* XCRemoteSwiftPackageReference "fmdb" */;
 			productName = FMDB;
 		};
-		0C29EA762942BD9200F2C0A7 /* FMDB */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0C29EA65293C48BB00F2C0A7 /* XCRemoteSwiftPackageReference "fmdb" */;
-			productName = FMDB;
-		};
 		0C9DB8FF299DB8D100E6D4F9 /* SwiftCSV */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0C9DB8FE299DB8D100E6D4F9 /* XCRemoteSwiftPackageReference "SwiftCSV" */;
-			productName = SwiftCSV;
-		};
-		0CD7600029B02F2D0078853D /* SwiftCSV */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0C9DB8FE299DB8D100E6D4F9 /* XCRemoteSwiftPackageReference "SwiftCSV" */;
 			productName = SwiftCSV;

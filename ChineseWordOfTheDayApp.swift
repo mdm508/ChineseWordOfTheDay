@@ -11,7 +11,6 @@ import SwiftData
 @main
 struct ChineseWordOfTheDayApp: App {
 
-    private let dataController: DataController = DataController(inMemory: false)
     var body: some Scene {
         WindowGroup {
             TodaysWordView().modelContainer(Containers.wordContainer)
